@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>60 ans : comment se libérer des raideurs articulaires — Coach KONE</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --vert:        #3D6B5E;
+  --vert-fonce:  #253F38;
+  --vert-pale:   #EAF2EF;
+  --terra:       #BE7A58;
+  --terra-pale:  #F5E8DF;
+  --ivoire:      #FAF7F2;
+  --gris:        #4A4A4A;
+  --gris-clair:  #F0EDE8;
+  --blanc:       #FFFFFF;
+  --or:          #C9A84C;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background: var(--ivoire);
+  color: var(--gris);
+  font-size: 17px;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* ── UTILITAIRES ── */
+.container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+.container--narrow { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; line-height: 1.25; }
+p { margin-bottom: 16px; }
+section { padding: 72px 24px; }
+
+.label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--terra);
+  margin-bottom: 14px;
+}
+.divider {
+  width: 60px; height: 3px;
+  background: var(--terra);
+  margin: 18px auto;
+  border-radius: 2px;
+}
+.divider--left { margin-left: 0; }
+
+/* ── HERO ── */
+.hero {
+  background: var(--vert-fonce);
+  color: var(--blanc);
+  padding: 90px 24px 70px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 10%, rgba(190,122,88,.3) 0%, transparent 55%),
+    radial-gradient(ellipse at 10% 90%, rgba(61,107,94,.5) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-block;
+  border: 1px solid rgba(201,168,76,.6);
+  color: var(--or);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 6px 20px;
+  border-radius: 40px;
+  margin-bottom: 28px;
+}
+.hero h1 {
+  font-size: clamp(34px, 6vw, 62px);
+  font-weight: 700;
+  max-width: 760px;
+  margin: 0 auto 18px;
+  color: var(--blanc);
+}
+.hero h1 em {
+  font-style: italic;
+  color: #BBDDD4;
+}
+.hero-sub {
+  font-size: clamp(17px, 2.5vw, 21px);
+  font-weight: 300;
+  max-width: 580px;
+  margin: 0 auto 44px;
+  opacity: .88;
+  line-height: 1.65;
+}
+.btn {
+  display: inline-block;
+  background: var(--terra);
+  color: #fff;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 18px 46px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform .2s, box-shadow .2s, background .2s;
+  box-shadow: 0 8px 32px rgba(190,122,88,.4);
+}
+.btn:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(190,122,88,.5); background: #a8673e; }
+.btn--vert { background: var(--vert); box-shadow: 0 8px 32px rgba(61,107,94,.35); }
+.btn--vert:hover { background: var(--vert-fonce); box-shadow: 0 14px 40px rgba(61,107,94,.45); }
+.hero-note { margin-top: 18px; font-size: 14px; opacity: .6; }
+
+/* ── STATS BAND ── */
+.stats-band {
+  background: var(--vert);
+  color: var(--blanc);
+  padding: 28px 24px;
+}
+.stats-inner {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+.stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--or);
+  line-height: 1;
+}
+.stat-label { font-size: 13px; opacity: .8; margin-top: 4px; }
+
+/* ── INTRO ── */
+.intro-section { background: var(--blanc); }
+.intro-section h2 { font-size: clamp(26px, 4vw, 40px); color: var(--vert-fonce); margin-bottom: 20px; }
+.intro-quote {
+  border-left: 4px solid var(--terra);
+  padding: 18px 24px;
+  margin: 28px 0;
+  background: var(--terra-pale);
+  border-radius: 0 10px 10px 0;
+  font-size: 18px;
+  font-style: italic;
+  color: var(--vert-fonce);
+  line-height: 1.7;
+}
+
+/* ── PROBLÈME ── */
+.problem-section { background: var(--vert-fonce); color: var(--blanc); }
+.problem-section h2 { font-size: clamp(26px, 4vw, 40px); color: var(--blanc); margin-bottom: 10px; }
+.problem-section .label { color: rgba(201,168,76,.9); }
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 36px;
+}
+.problem-card {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px;
+  padding: 22px 20px;
+}
+.problem-card .icon { font-size: 26px; margin-bottom: 10px; }
+.problem-card p { font-size: 15px; opacity: .85; margin: 0; line-height: 1.6; }
+.problem-note {
+  margin-top: 36px;
+  padding: 20px 26px;
+  background: rgba(190,122,88,.15);
+  border-left: 4px solid var(--terra);
+  border-radius: 0 10px 10px 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ── SOLUTION ── */
+.solution-section { background: var(--ivoire); }
+.solution-section h2 { font-size: clamp(26px, 4vw, 40px); color: var(--vert-fonce); margin-bottom: 16px; }
+.solution-story {
+  background: var(--blanc);
+  border-radius: 16px;
+  padding: 32px 36px;
+  margin: 32px 0;
+  border: 1px solid var(--gris-clair);
+  box-shadow: 0 4px 24px rgba(61,107,94,.07);
+}
+.story-name { font-weight: 700; color: var(--terra); margin-bottom: 8px; font-size: 15px; }
+
+/* ── BÉNÉFICES ── */
+.benefits-section { background: var(--blanc); }
+.benefits-section h2 { font-size: clamp(26px, 4vw, 40px); color: var(--vert-fonce); margin-bottom: 8px; }
+.benefits-list { margin-top: 36px; display: flex; flex-direction: column; gap: 18px; }
+.benefit-item {
+  display: flex; gap: 20px; align-items: flex-start;
+  background: var(--vert-pale);
+  border-radius: 12px;
+  padding: 22px 24px;
+  border-left: 5px solid var(--vert);
+}
+.benefit-icon { font-size: 28px; min-width: 36px; }
+.benefit-text h3 { font-family: 'Source Sans 3', sans-serif; font-size: 16px; font-weight: 700; color: var(--vert-fonce); margin-bottom: 4px; }
+.benefit-text p { font-size: 15px; margin: 0; line-height: 1.65; }
+
+/* ── DIFFÉRENT ── */
+.diff-section { background: var(--terra-pale); }
+.diff-section h2 { font-size: clamp(26px, 4vw, 40px); color: var(--vert-fonce); margin-bottom: 8px; }
+.diff-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 36px;
+}
+.diff-card {
+  background: var(--blanc);
+  border-radius: 14px;
+  padding: 26px 22px;
+  border-bottom: 4px solid var(--terra);
+  box-shadow: 0 2px 16px rgba(190,122,88,.08);
+}
+.diff-card .d-icon { font-size: 30px; margin-bottom: 12px; }
+.diff-card h3 { font-family: 'Source Sans 3', sans-serif; font-size: 15px; font-weight: 700; color: var(--vert-fonce); margin-bottom: 6px; }
+.diff-card p { font-size: 14px; margin: 0; line-height: 1.6; }
+
+/* ── CONTENU ── */
+.content-section { background: var(--vert-fonce); color: var(--blanc); }
+.content-section h2 { font-size: clamp(26px, 4vw, 40px); color: var(--blanc); margin-bottom: 8px; }
+.content-section .label { color: var(--or); }
+.modules-list { margin-top: 32px; display: flex; flex-direction: column; gap: 14px; }
+.module-row {
+  display: flex; gap: 18px; align-items: flex-start;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 12px;
+  padding: 20px 22px;
+}
+.module-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px; font-weight: 700;
+  color: var(--or); line-height: 1;
+  min-width: 40px;
+}
+.module-info h3 { font-family: 'Source Sans 3', sans-serif; font-size: 16px; font-weight: 700; color: rgba(255,255,255,.95); margin-bottom: 4px; }
+.module-info p { font-size: 14px; opacity: .75; margin: 0; line-height: 1.55; }
+.content-bonus {
+  margin-top: 28px;
+  background: rgba(201,168,76,.12);
+  border: 1px solid rgba(201,168,76,.3);
+  border-radius: 12px;
+  padding: 20px 24px;
+  font-size: 15px;
+}
+.content-bonus strong { color: var(--or); }
+
+/* ── POUR QUI ── */
+.forqui-section { background: var(--ivoire); }
+.forqui-section h2 { font-size: clamp(26px, 4vw, 40px); color: var(--vert-fonce); margin-bottom: 8px; }
+.forqui-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 36px;
+}
+@media(max-width:580px){ .forqui-grid { grid-template-columns: 1fr; } }
+.oui-box { background: #EBF4F1; border: 2px solid var(--vert); border-radius: 14px; padding: 28px; }
+.non-box { background: #FBF0EB; border: 2px solid var(--terra); border-radius: 14px; padding: 28px; }
+.oui-box h3 { color: var(--vert-fonce); font-family: 'Source Sans 3', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+.non-box h3 { color: var(--terra); font-family: 'Source Sans 3', sans-serif; font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+.forqui-list { list-style: none; }
+.forqui-list li { font-size: 15px; padding: 7px 0; border-bottom: 1px solid rgba(0,0,0,.07); line-height: 1.55; }
+.forqui-list li:last-child { border-bottom: none; }
+.oui-box li::before { content: "✅ "; }
+.non-box li::before { content: "✗ "; color: var(--terra); font-weight: 700; }
+
+/* ── OBJECTIONS ── */
+.faq-section { background: var(--blanc); }
+.faq-section h2 { font-size: clamp(26px, 4vw, 40px); color: var(--vert-fonce); margin-bottom: 8px; }
+.faq-list { margin-top: 32px; display: flex; flex-direction: column; gap: 12px; }
+.faq-item { border: 1px solid var(--gris-clair); border-radius: 12px; overflow: hidden; }
+.faq-q {
+  width: 100%; text-align: left; background: none; border: none;
+  padding: 20px 24px; font-size: 16px; font-weight: 700;
+  color: var(--vert-fonce); cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: 'Source Sans 3', sans-serif;
+}
+.faq-q .arr { font-size: 22px; color: var(--terra); transition: transform .3s; }
+.faq-q.open .arr { transform: rotate(45deg); }
+.faq-a {
+  max-height: 0; overflow: hidden;
+  transition: max-height .4s ease, padding .3s;
+  font-size: 15px; line-height: 1.75;
+  padding: 0 24px; color: var(--gris);
+  background: var(--ivoire);
+}
+.faq-a.open { max-height: 260px; padding: 16px 24px 22px; }
+
+/* ── OFFRE ── */
+.offer-section { background: var(--vert-fonce); color: var(--blanc); text-align: center; }
+.offer-section h2 { font-size: clamp(26px, 4vw, 42px); color: var(--blanc); margin-bottom: 10px; }
+.offer-section .label { color: var(--or); }
+.offer-box {
+  max-width: 580px; margin: 36px auto 0;
+  background: var(--blanc);
+  border-radius: 20px;
+  padding: 48px 40px;
+  box-shadow: 0 24px 60px rgba(0,0,0,.25);
+  color: var(--gris);
+}
+.offer-box h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px; color: var(--vert-fonce);
+  margin-bottom: 24px;
+}
+.offer-includes { text-align: left; margin-bottom: 30px; }
+.offer-includes li {
+  list-style: none; font-size: 15px;
+  padding: 10px 0; border-bottom: 1px solid var(--gris-clair);
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.offer-includes li:last-child { border-bottom: none; }
+.price-area { margin-bottom: 26px; }
+.price-was { font-size: 14px; text-decoration: line-through; opacity: .45; margin-bottom: 4px; }
+.price-now {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 58px; font-weight: 700;
+  color: var(--terra); line-height: 1;
+}
+.price-now sup { font-size: 24px; vertical-align: super; }
+.price-desc { font-size: 14px; color: #888; margin-top: 6px; }
+.secure { margin-top: 14px; font-size: 13px; color: #999; display: flex; align-items: center; justify-content: center; gap: 6px; }
+.offer-lead {
+  margin-top: 32px; padding-top: 24px;
+  border-top: 1px solid var(--gris-clair);
+  text-align: left;
+}
+.offer-lead h4 { font-family: 'Source Sans 3', sans-serif; font-size: 14px; font-weight: 700; color: var(--vert); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.offer-lead p { font-size: 14px; line-height: 1.65; color: var(--gris); margin: 0; }
+
+/* ── CTA FINAL ── */
+.cta-section { background: var(--terra-pale); text-align: center; }
+.cta-section h2 { font-size: clamp(26px, 4vw, 40px); color: var(--vert-fonce); margin-bottom: 12px; }
+.cta-section p { max-width: 560px; margin: 0 auto 28px; font-size: 17px; }
+
+/* ── TITRES ALTERNATIFS ── */
+.alt-section { background: var(--vert-pale); }
+.alt-section h2 { font-size: clamp(22px, 3.5vw, 34px); color: var(--vert-fonce); margin-bottom: 8px; }
+.alt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 28px; }
+.alt-card {
+  background: var(--blanc);
+  border-radius: 12px; padding: 22px 20px;
+  border-top: 4px solid var(--vert);
+  box-shadow: 0 2px 12px rgba(61,107,94,.08);
+}
+.alt-card .alt-num { font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--terra); text-transform: uppercase; margin-bottom: 8px; }
+.alt-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--vert-fonce); line-height: 1.3; margin-bottom: 8px; }
+.alt-card p { font-size: 13px; margin: 0; color: #888; line-height: 1.5; }
+
+/* ── BUTTONS CTA ALTERNATIFS ── */
+.btns-section { background: var(--blanc); }
+.btns-section h2 { font-size: clamp(22px, 3.5vw, 34px); color: var(--vert-fonce); margin-bottom: 8px; }
+.btns-grid { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; max-width: 500px; }
+.btn-variant {
+  display: inline-block; text-align: center;
+  padding: 18px 32px; border-radius: 50px;
+  font-size: 17px; font-weight: 700;
+  text-decoration: none; transition: transform .2s;
+}
+.btn-variant:hover { transform: translateY(-2px); }
+.bv1 { background: var(--terra); color: #fff; box-shadow: 0 6px 24px rgba(190,122,88,.35); }
+.bv2 { background: var(--vert); color: #fff; box-shadow: 0 6px 24px rgba(61,107,94,.3); }
+.bv3 { background: var(--vert-fonce); color: #fff; box-shadow: 0 6px 24px rgba(37,63,56,.3); }
+.btn-note { font-size: 12px; color: #aaa; margin-top: 4px; margin-left: 16px; }
+
+/* ── PITCH COURT ── */
+.pitch-section { background: var(--vert-fonce); color: var(--blanc); }
+.pitch-section h2 { font-size: clamp(22px, 3.5vw, 34px); color: var(--blanc); margin-bottom: 8px; }
+.pitch-section .label { color: var(--or); }
+.pitch-box {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 14px;
+  padding: 30px 32px;
+  margin-top: 24px;
+  font-size: 17px;
+  line-height: 1.85;
+}
+.pitch-box p { margin: 0; opacity: .9; }
+.pitch-box strong { color: var(--or); }
+
+/* ── FOOTER ── */
+footer {
+  background: #192B26;
+  color: rgba(255,255,255,.5);
+  text-align: center;
+  padding: 32px 24px;
+  font-size: 13px;
+}
+footer a { color: var(--terra); text-decoration: none; }
+footer strong { color: rgba(255,255,255,.8); }
+
+/* ── STICKY BAR ── */
+.sticky {
+  position: fixed; bottom: 0; left: 0; right: 0;
+  background: var(--terra);
+  color: #fff; text-align: center;
+  padding: 14px 16px;
+  font-weight: 700; font-size: 16px;
+  z-index: 999; display: none;
+  box-shadow: 0 -4px 20px rgba(0,0,0,.2);
+}
+.sticky a { color: #fff; text-decoration: none; }
+@media(max-width:768px){ .sticky { display: block; } }
+
+/* ── ANIMATIONS ── */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s, transform .65s; }
+.reveal.visible { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════════
+     HERO
+════════════════════════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">Programme Coach KONE · Bruxelles</div>
+    <h1>60 ans : <em>Stop aux raideurs</em> articulaires</h1>
+    <p class="hero-sub">Retrouvez de la souplesse, du confort et l'envie de bouger — en douceur, chez vous, à votre rythme.</p>
+    <a href="#offre" class="btn">Je veux retrouver ma mobilité →</a>
+    <p class="hero-note">Sans salle de sport · Sans matériel · Sans douleur supplémentaire · Prix de lancement : 15€</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     STATS BAND
+════════════════════════════ -->
+<div class="stats-band">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-num">+20</div>
+      <div class="stat-label">vidéos courtes (3 à 8 min)</div>
+    </div>
+    <div>
+      <div class="stat-num">4</div>
+      <div class="stat-label">zones ciblées : genoux, dos, épaules, hanches</div>
+    </div>
+    <div>
+      <div class="stat-num">0</div>
+      <div class="stat-label">matériel nécessaire</div>
+    </div>
+    <div>
+      <div class="stat-num">∞</div>
+      <div class="stat-label">accès à vie, à votre rythme</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════
+     INTRODUCTION
+════════════════════════════ -->
+<section class="intro-section">
+  <div class="container--narrow reveal">
+    <span class="label">Je vous comprends</span>
+    <h2>Vous n'avez pas vieilli. Votre corps a juste besoin qu'on lui rappelle comment bouger.</h2>
+    <div class="divider divider--left"></div>
+
+    <p>Peut-être que vous vous levez le matin avec ce sentiment désagréable d'être "grippé(e)". Quelques pas avant que ça se débloque. Un escalier qui demande plus d'effort qu'avant. Un dos qui tire dès que vous restez assis trop longtemps.</p>
+
+    <p>Vous avez peut-être essayé des choses. Des exercices trouvés sur internet. Un peu de marche. Parfois ça aide, parfois pas. Et surtout, vous ne savez pas vraiment <em>quoi faire</em>, ni si ce que vous faites est bon pour vous.</p>
+
+    <div class="intro-quote">
+      "Je voulais bouger, mais j'avais peur de faire une fausse manœuvre. Alors je ne faisais rien. Et je me raidissais encore plus."
+    </div>
+
+    <p>Cette situation est très fréquente après 60 ans. Et elle a une solution claire, progressive, sans risque. C'est exactement ce que ce programme vous propose.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     PROBLÈME
+════════════════════════════ -->
+<section class="problem-section">
+  <div class="container reveal">
+    <span class="label">Ce qui se passe vraiment</span>
+    <h2>La raideur articulaire n'est pas une fatalité</h2>
+    <div class="divider"></div>
+    <p style="opacity:.85; max-width:640px;">Elle s'installe progressivement, souvent sans qu'on s'en rende compte. Et elle s'aggrave quand on arrête de bouger pour "se protéger".</p>
+
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="icon">🦵</div>
+        <p><strong style="color:#BBDDD4">Genoux douloureux</strong><br>Le cartilage s'use faute de mouvement. Les muscles qui soutiennent le genou s'affaiblissent. La douleur augmente.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🔁</div>
+        <p><strong style="color:#BBDDD4">Dos qui tire</strong><br>Les muscles abdominaux et fessiers se relâchent. La colonne vertébrale porte tout. Le bas du dos souffre.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">💪</div>
+        <p><strong style="color:#BBDDD4">Épaule bloquée</strong><br>Une épaule non mobilisée se raidit progressivement. Sans entretien, le risque d'épaule gelée augmente réellement.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🚶</div>
+        <p><strong style="color:#BBDDD4">Hanche raide</strong><br>Quand la hanche se raidit, tout le corps compense. La marche change. L'équilibre se fragilise. Les chutes deviennent plus probables.</p>
+      </div>
+    </div>
+
+    <div class="problem-note">
+      ⚠️ <strong>Ce que les études confirment :</strong> l'immobilité accélère la dégradation articulaire. Rester immobile pour "protéger" une articulation lui fait plus de mal que du bien. Le mouvement doux et régulier est la meilleure protection qui existe.
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     SOLUTION
+════════════════════════════ -->
+<section class="solution-section">
+  <div class="container--narrow reveal">
+    <span class="label">La solution</span>
+    <h2>Un programme conçu spécialement pour votre corps d'aujourd'hui</h2>
+    <div class="divider divider--left"></div>
+
+    <p>Le programme <strong>« 60 ans : Stop aux raideurs articulaires »</strong> est une série de vidéos courtes, simples et progressives. Chaque vidéo cible une zone précise : les genoux, le dos, les épaules, les hanches.</p>
+
+    <p>Vous n'avez pas besoin d'être sportif. Vous n'avez pas besoin de matériel. Vous avez juste besoin d'un peu d'espace et de l'envie de prendre soin de vous.</p>
+
+    <div class="solution-story">
+      <p class="story-name">👤 L'histoire de Mahamadou, 66 ans — abonné Coach KONE</p>
+      <p style="font-style:italic; margin:0; line-height:1.75; font-size:16px;">"J'avais arrêté de marcher longtemps parce que j'avais peur d'aggraver mon genou. Depuis que j'ai commencé ces exercices, la douleur a vraiment diminué. Et le matin, je me lève différemment. Plus doucement, mais beaucoup plus facilement."</p>
+    </div>
+
+    <p>Ce que Mahamadou a vécu, c'est ce que le mouvement adapté peut faire — progressivement, sans forcer, sans risque.</p>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     BÉNÉFICES
+════════════════════════════ -->
+<section class="benefits-section">
+  <div class="container reveal">
+    <span class="label">Ce que vous allez gagner</span>
+    <h2>Des changements concrets dans votre quotidien</h2>
+    <div class="divider divider--left"></div>
+
+    <div class="benefits-list">
+      <div class="benefit-item">
+        <div class="benefit-icon">🌅</div>
+        <div class="benefit-text">
+          <h3>Des matins qui commencent bien</h3>
+          <p>Fini les 20 minutes à "dérouiller". Votre corps démarre plus vite, plus en souplesse. La journée commence différemment.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🚶</div>
+        <div class="benefit-text">
+          <h3>Marcher, monter, se baisser — sans appréhension</h3>
+          <p>Les gestes du quotidien redeviennent naturels. Un escalier, un objet au sol, une sortie en famille — vous le faites sans y penser à deux fois.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">🧘</div>
+        <div class="benefit-text">
+          <h3>Moins de tensions, plus de légèreté</h3>
+          <p>Les articulations soulagées, les muscles détendus — vous sentez votre corps différemment. Plus léger, plus disponible.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">💪</div>
+        <div class="benefit-text">
+          <h3>Reprendre confiance dans votre corps</h3>
+          <p>Savoir que vous pouvez bouger sans risque, c'est libérateur. La peur de se blesser s'efface progressivement. Vous reprenez le contrôle.</p>
+        </div>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-icon">👨‍👧</div>
+        <div class="benefit-text">
+          <h3>Être pleinement présent avec ceux que vous aimez</h3>
+          <p>Jouer avec vos petits-enfants. Faire une promenade. Participer à un repas sans avoir mal ensuite. Ces moments simples retrouvent leur saveur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     DIFFÉRENT
+════════════════════════════ -->
+<section class="diff-section">
+  <div class="container reveal">
+    <span class="label">Pourquoi ce programme</span>
+    <h2>Ce qui le rend différent des autres</h2>
+    <div class="divider divider--left"></div>
+
+    <div class="diff-grid">
+      <div class="diff-card">
+        <div class="d-icon">🎯</div>
+        <h3>Conçu pour les 60 ans et plus</h3>
+        <p>Pas un programme fitness adapté. Un programme pensé dès le départ pour votre corps, vos besoins, vos limites réelles.</p>
+      </div>
+      <div class="diff-card">
+        <div class="d-icon">🐢</div>
+        <h3>Progressif et sans risque</h3>
+        <p>Chaque exercice va du plus simple au plus complet. Vous avancez à votre rythme. Jamais de précipitation, jamais de forçage.</p>
+      </div>
+      <div class="diff-card">
+        <div class="d-icon">🏠</div>
+        <h3>Chez vous, comme vous voulez</h3>
+        <p>Pas de salle, pas de déplacement, pas de regard des autres. Votre salon, votre chambre, votre espace — c'est votre studio.</p>
+      </div>
+      <div class="diff-card">
+        <div class="d-icon">💬</div>
+        <h3>Un coach qui vous parle vraiment</h3>
+        <p>Coach KONE s'adresse à vous directement, simplement, sans jargon. Vous comprenez ce que vous faites et pourquoi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     CONTENU
+════════════════════════════ -->
+<section class="content-section">
+  <div class="container reveal">
+    <span class="label">Ce que vous recevez</span>
+    <h2>Le programme complet — étape par étape</h2>
+    <div class="divider"></div>
+
+    <div class="modules-list">
+      <div class="module-row">
+        <div class="module-num">01</div>
+        <div class="module-info">
+          <h3>Module Genoux</h3>
+          <p>Des exercices progressifs pour renforcer les muscles de soutien et réduire la pression sur l'articulation — du plus simple au plus complet.</p>
+        </div>
+      </div>
+      <div class="module-row">
+        <div class="module-num">02</div>
+        <div class="module-info">
+          <h3>Module Dos & Lombaires</h3>
+          <p>Soulager les tensions, renforcer les abdominaux profonds, retrouver une posture stable au quotidien.</p>
+        </div>
+      </div>
+      <div class="module-row">
+        <div class="module-num">03</div>
+        <div class="module-info">
+          <h3>Module Épaules</h3>
+          <p>Décompresser l'épaule, prévenir le blocage, retrouver de l'amplitude de mouvement en douceur.</p>
+        </div>
+      </div>
+      <div class="module-row">
+        <div class="module-num">04</div>
+        <div class="module-info">
+          <h3>Module Hanches</h3>
+          <p>Libérer la raideur, renforcer les fessiers, retrouver une marche fluide et une meilleure stabilité.</p>
+        </div>
+      </div>
+      <div class="module-row">
+        <div class="module-num">05</div>
+        <div class="module-info">
+          <h3>Module Réveil en douceur</h3>
+          <p>À faire chaque matin avant de poser le pied par terre. Quelques minutes pour préparer tout le corps à la journée, sans risque.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-bonus">
+      🎁 <strong>Bonus 1 :</strong> Le guide PDF <em>« 5 exercices essentiels pour bouger mieux après 60 ans »</em> — 5 exercices illustrés et expliqués, à faire dès aujourd'hui.
+    </div>
+    <div class="content-bonus" style="margin-top:12px">
+      🥗 <strong>Bonus 2 :</strong> <em>« L'alimentation après 60 ans »</em> — ce qu'il faut privilégier, ce qu'il vaut mieux réduire. Des conseils simples, concrets, adaptés à votre âge pour soutenir vos articulations de l'intérieur.
+    </div>
+    <div class="content-bonus" style="margin-top:12px">
+      🌿 <strong>Bonus 3 :</strong> <em>« L'hygiène de vie après 60 ans »</em> — des gestes simples du quotidien qui améliorent réellement le vécu : sommeil, hydratation, posture, routine. Facile à mettre en place, durable dans le temps.
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     POUR QUI
+════════════════════════════ -->
+<section class="forqui-section">
+  <div class="container reveal">
+    <span class="label">Ce programme est fait pour vous si…</span>
+    <h2>Soyons honnêtes ensemble</h2>
+    <div class="divider divider--left"></div>
+
+    <div class="forqui-grid">
+      <div class="oui-box">
+        <h3>✅ C'est fait pour vous</h3>
+        <ul class="forqui-list">
+          <li>Vous avez 60 ans et plus</li>
+          <li>Vous avez des raideurs ou inconforts articulaires</li>
+          <li>Vous voulez bouger sans vous blesser</li>
+          <li>Vous n'êtes pas (ou plus) sportif(ve)</li>
+          <li>Vous cherchez quelque chose de simple et concret</li>
+          <li>Vous voulez rester autonome le plus longtemps possible</li>
+        </ul>
+      </div>
+      <div class="non-box">
+        <h3>✗ Ce n'est pas pour vous si</h3>
+        <ul class="forqui-list">
+          <li>Vous avez une opération récente non cicatrisée</li>
+          <li>Votre médecin vous a interdit tout mouvement</li>
+          <li>Vous cherchez un programme de musculation intense</li>
+          <li>Vous attendez des résultats sans aucun effort</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     OBJECTIONS / FAQ
+════════════════════════════ -->
+<section class="faq-section">
+  <div class="container reveal">
+    <span class="label">Vos questions, mes réponses</span>
+    <h2>Ce que vous vous demandez peut-être</h2>
+    <div class="divider divider--left"></div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Je n'ai jamais fait de sport. Est-ce que je peux quand même suivre ? <span class="arr">+</span></button>
+        <div class="faq-a">Absolument. Ce programme est conçu pour les personnes qui ne sont pas sportives — ou qui ont arrêté depuis longtemps. Les exercices démarrent très doucement. Vous n'avez pas besoin de condition physique particulière pour commencer.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">J'ai peur de me faire mal. Les exercices sont vraiment sans risque ? <span class="arr">+</span></button>
+        <div class="faq-a">Chaque exercice comporte une précaution clairement expliquée. La règle d'or est simple : un léger inconfort est normal, la douleur vive est un signal d'arrêt. Coach KONE vous guide pour rester dans une zone de confort sûre. En cas de doute, consultez votre médecin avant de commencer.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Combien de temps faut-il par jour ? <span class="arr">+</span></button>
+        <div class="faq-a">Chaque vidéo dure entre 3 et 8 minutes. Vous n'avez pas besoin de tout faire en une seule fois. 5 à 10 minutes par jour, 3 à 4 fois par semaine — c'est suffisant pour sentir la différence en quelques semaines.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Est-ce que ça marche vraiment après 60 ans ? <span class="arr">+</span></button>
+        <div class="faq-a">Le corps reste capable de s'adapter à tout âge. Des études sérieuses montrent que des exercices doux réguliers améliorent significativement la mobilité et réduisent les inconforts articulaires chez les seniors. Ce programme s'appuie sur ces principes.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Comment j'accède aux vidéos ? <span class="arr">+</span></button>
+        <div class="faq-a">Dès votre paiement validé, vous recevez un email avec un lien d'accès. Les vidéos sont disponibles en ligne — sur téléphone, tablette ou ordinateur. Rien à installer. Vous y accédez à vie, quand vous voulez, autant de fois que vous voulez.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggle(this)">Et si ça ne me convient pas ? <span class="arr">+</span></button>
+        <div class="faq-a">Si vous avez essayé le programme et que vous n'en êtes pas satisfait(e), contactez-nous dans les 14 jours suivant votre achat. Nous trouvons une solution ensemble.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     OFFRE
+════════════════════════════ -->
+<section class="offer-section" id="offre">
+  <div class="container reveal">
+    <span class="label">L'offre de lancement</span>
+    <h2>Tout ce dont vous avez besoin pour commencer ce soir</h2>
+    <div class="divider"></div>
+
+    <div class="offer-box">
+      <h3>60 ans : Stop aux Raideurs Articulaires</h3>
+      <ul class="offer-includes">
+        <li>🦵 <span>Module Genoux — exercices progressifs</span></li>
+        <li>🏋️ <span>Module Dos & Lombaires — exercices progressifs</span></li>
+        <li>💪 <span>Module Épaules — exercices progressifs</span></li>
+        <li>🔄 <span>Module Hanches — exercices progressifs</span></li>
+        <li>🌅 <span>Module Réveil en douceur — à faire dans le lit</span></li>
+        <li>🎁 <span><strong>Bonus 1 :</strong> Guide PDF « 5 exercices essentiels après 60 ans »</span></li>
+        <li>🥗 <span><strong>Bonus 2 :</strong> L'alimentation après 60 ans — que privilégier, que réduire</span></li>
+        <li>🌿 <span><strong>Bonus 3 :</strong> L'hygiène de vie après 60 ans — des gestes simples qui changent tout</span></li>
+        <li>♾️ <span>Accès à vie — à votre rythme, sans pression</span></li>
+      </ul>
+      <div class="price-area">
+        <div class="price-was">Valeur réelle : 97€</div>
+        <div class="price-now"><sup>€</sup>15</div>
+        <div class="price-desc">Prix de lancement · Accès immédiat après paiement</div>
+      </div>
+      <a href="https://ftxktpst.mychariow.shop/prd_tpbism" class="btn" style="width:100%; text-align:center; display:block;">
+        Je veux retrouver ma mobilité →
+      </a>
+      <p class="secure">🔒 Paiement sécurisé · Email de confirmation immédiat</p>
+
+      <div class="offer-lead">
+        <h4>🎁 Votre lead magnet offert</h4>
+        <p>En achetant ce programme, vous recevez également le guide <em>« 5 exercices essentiels pour bouger mieux après 60 ans »</em> — 5 exercices illustrés, expliqués pas à pas, à faire dès aujourd'hui. Un point de départ concret, immédiat, sans attendre.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     CTA FINAL
+════════════════════════════ -->
+<section class="cta-section">
+  <div class="container reveal">
+    <h2>Votre corps mérite qu'on en prenne soin. Maintenant.</h2>
+    <p>Pas besoin d'attendre d'aller mieux pour commencer. On commence là où on est, avec ce qu'on a. En douceur. Progressivement. Ensemble.</p>
+    <a href="https://ftxktpst.mychariow.shop/prd_tpbism" class="btn btn--vert">Je veux retrouver ma mobilité →</a>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     PITCH COURT
+════════════════════════════ -->
+<section class="pitch-section">
+  <div class="container reveal">
+    <span class="label">Le pitch en 5 phrases</span>
+    <h2>Pour partager le programme en quelques mots</h2>
+    <div class="divider"></div>
+    <div class="pitch-box">
+      <p>
+        <strong>Après 60 ans, la raideur articulaire n'est pas une fatalité — c'est un manque de mouvement adapté.</strong>
+        Le programme <em>« 60 ans : Stop aux raideurs articulaires »</em> propose +20 vidéos courtes (3 à 8 min) pour soulager progressivement les genoux, le dos, les épaules et les hanches — sans matériel, chez vous, à votre rythme.
+        Conçu spécialement pour les personnes de 60 ans et plus, même sans expérience sportive.
+        Des exercices doux, progressifs, expliqués simplement par Coach KONE.
+        <strong>Accès à vie pour 15€ — avec 3 bonus offerts.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════
+     FOOTER
+════════════════════════════ -->
+<footer>
+  <p><strong>Coach KONE</strong> · <a href="https://coachkone.com">coachkone.com</a> · Bruxelles</p>
+  <p style="margin-top:8px">Ce programme est un outil de bien-être. Il ne remplace pas un avis médical. En cas de douleur persistante, consultez votre médecin.</p>
+</footer>
+
+<!-- ── STICKY BAR MOBILE ── -->
+<div class="sticky">
+  <a href="#offre">🛒 Accéder au programme — 15€ · Accès immédiat</a>
+</div>
+
+<script>
+function toggle(btn) {
+  const a = btn.nextElementSibling;
+  const open = a.classList.contains('open');
+  document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
+  document.querySelectorAll('.faq-q').forEach(x => x.classList.remove('open'));
+  if (!open) { a.classList.add('open'); btn.classList.add('open'); }
+}
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
