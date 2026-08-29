@@ -1,178 +1,199 @@
-# Étape 1 — Analyse froide, modèles récurrents possibles, recommandation
+# Étape 1 — Analyse froide et choix du modèle (objectif : 4 000 €/mois)
 
-Date : 2026-08-29 · Contexte : Coach KONE (Charleroi, Belgique) · Objectif : 400 €/mois récurrents, 2–3 h/jour max.
+Date : 2026-08-29 · Coach KONE (Charleroi, Belgique) · Objectif corrigé : **4 000 €/mois récurrents**, 2–3 h/jour.
 
 ---
 
 ## 1. Ce que je comprends de ta situation
 
 Tu as une très grosse audience (240k TikTok santé/bien-être/diabète) mais elle est majoritairement
-non-solvable pour un abonnement en euros, et surtout elle n'est pas la même que l'audience que tu
-essaies de monétiser (13k Facebook, « IA pour les 40+ »). Tu as de vraies compétences empilées —
-coach sportif, nutrition, conception web no-code, ex-prof de français — mais tu les vends aujourd'hui
-au prix le plus bas de ta gamme (15 € en one-shot). Tu as déjà un produit fini et une page de vente
-qui fonctionnent techniquement (« 60 ans : Stop aux raideurs articulaires », checkout Chariow), donc
-le problème n'est pas la production : c'est le **modèle économique** et le **choix de la cible payante**.
-Ta contrainte réelle n'est pas le talent ni le volume d'audience, c'est le **pouvoir d'achat de ceux
-qui te suivent** et l'absence d'une offre qui se renouvelle tous les mois.
+non-solvable en euros, et ce n'est pas la même audience que celle que tu essaies de monétiser
+(13k Facebook, « IA pour les 40+ »). Tu empiles de vraies compétences — coach sportif, nutrition,
+conception web no-code, ex-prof de français — mais tu les vends au prix le plus bas de ta gamme
+(15 € en one-shot). Tu as déjà un produit fini et un tunnel qui fonctionne techniquement
+(« 60 ans : Stop aux raideurs articulaires », checkout Chariow, lead magnet). Le problème n'est donc
+pas la production : c'est le **modèle de prix** et le **choix de la cible payante**. Ta contrainte
+réelle n'est ni le talent ni le volume d'audience, c'est le **pouvoir d'achat de ceux qui te suivent**.
 
 ---
 
-## 2. Le vrai problème (à dire clairement)
+## 2. Le calcul qui décide de tout
 
-Ton audience n'est pas « mauvaise ». Elle est **mal appariée** à ton offre.
+À 400 €/mois, presque n'importe quel modèle marche. À **4 000 €/mois**, la loi du churn
+(le taux de résiliation mensuel — le % de membres qui partent chaque mois) élimine la moitié des options.
 
-- 240k personnes qui veulent du gratuit ≠ 240k clients. Une audience TikTok en Afrique francophone
-  se monétise par le **volume et la publicité**, pas par un abonnement récurrent en euros.
-- Un abonnement récurrent a besoin de trois choses que ton audience actuelle n'a probablement pas
-  toutes : (1) une carte bancaire qui accepte le prélèvement automatique, (2) 15–30 € par mois de
-  budget discrétionnaire, (3) un problème **chronique** qui justifie de repayer chaque mois.
-- Vendre à 15 € un programme complet n'est pas « accessible », c'est un **signal de faible valeur**
-  qui attire les acheteurs les plus fragiles et les plus exigeants en support.
+Un abonnement bas prix perd typiquement 8 à 12 % de ses membres par mois. Voilà ce que ça coûte :
 
-Conséquence : le levier n'est pas « convertir mieux les 240k ». C'est **isoler la fraction solvable**
-(Europe francophone, 50+, carte bancaire) et lui vendre un abonnement à un prix normal.
+| Prix/mois | Membres nécessaires pour 4 000 € | Perdus/mois (churn 8 %) | Nouveaux clients à trouver **chaque mois**, juste pour ne pas reculer |
+|---|---|---|---|
+| 15 €   | 267 | 21 | 21 |
+| 19,90 €| 201 | 16 | 16 |
+| 29 €   | 138 | 11 | 11 |
+| 49 €   | 82  | 7  | 7  |
+| 149 €  | 27  | 2  | 2  |
+| 500 € (B2B) | 8 | 0,4 | 1 tous les 2 mois |
+
+**Lecture** : un club à 15 €/mois t'oblige à recruter 21 nouveaux clients par mois, tous les mois,
+pour toujours — c'est un poste d'acquisition à temps plein, pas 2–3 h/jour. Le même chiffre d'affaires
+à 149 €/mois demande 2 nouveaux clients par mois.
+
+**Conclusion : à 4 000 €, le prix bas n'est pas une option « accessible », c'est un piège opérationnel.**
+Vendre à 15 € un programme complet n'est pas de la générosité : c'est un signal de faible valeur qui
+attire les acheteurs les plus fragiles et les plus demandeurs en support.
+
+---
+
+## 3. Le vrai problème stratégique
+
+Ton audience n'est pas mauvaise. Elle est **mal appariée** à ton offre.
+
+- 240k personnes qui veulent du gratuit ≠ 240k clients. Une audience TikTok majoritairement
+  africaine se monétise par le **volume, la publicité et l'affiliation** — pas par un prélèvement
+  récurrent en euros.
+- Un abonnement récurrent a besoin de trois choses simultanément : (1) une carte bancaire qui accepte
+  le prélèvement automatique, (2) 30 à 150 € de budget mensuel disponible, (3) un problème
+  **chronique** qui justifie de repayer chaque mois.
+- Ces trois conditions ne sont réunies que sur une fraction de ton audience : les **50–70 ans
+  d'Europe francophone**.
+
+Le levier n'est donc pas « mieux convertir les 240k ». C'est **isoler la fraction solvable et lui
+vendre à un prix normal**, en utilisant le reste de l'audience comme machine à notoriété et à trafic.
 
 ---
 
-## 3. Trois modèles récurrents réalistes
+## 4. Les modèles évalués
 
-### Modèle A — Le club mensuel adossé à ton produit « 60 ans » existant
-Un abonnement mensuel (mouvement + nutrition anti-raideur) vendu **derrière** le produit à 15 €.
-Le produit à 15 € devient le produit d'appel ; l'abonnement devient le vrai revenu.
-
-**Pourquoi ça peut marcher pour toi**
-- L'actif existe déjà : 5 modules, page de vente, lead magnet, checkout. Zéro à construire de zéro.
-- C'est la seule niche où ta crédibilité est **vérifiable et difficile à copier** (coach sportif +
-  nutrition). En IA, tu es un parmi des dizaines de milliers.
-- La douleur articulaire est **chronique** : le besoin revient chaque mois. C'est la condition
-  numéro un d'un abonnement qui ne se résilie pas au bout de 30 jours.
-- Le payeur (60+ belge, français, suisse, québécois) paie **par carte**, donc le prélèvement
-  automatique fonctionne vraiment.
-
-**Risques et frictions**
-- Tu ne sais pas encore quelle part de tes 240k est en Europe francophone ET a 50+ ans.
-  C'est LA donnée qui décide de tout. TikTok skewe jeune ; ta niche diabète peut compenser.
-- Le 60+ est moins à l'aise avec l'abonnement en ligne : il faut rassurer (résiliation en 1 clic,
-  pas d'engagement) et éviter tout parcours d'achat compliqué.
-- **Risque légal réel** : coach sportif ≠ soignant. Interdiction de promettre de soigner, traiter
-  ou guérir (arthrose, diabète). Positionner sur « mobilité, confort, habitudes », jamais sur le
-  médical. Ta niche diabète est déjà proche de la ligne rouge.
-- Churn (= taux de résiliation) : si la douleur diminue, le membre part. Il faut une raison de
-  rester : progression, live mensuel, groupe.
-
-**Potentiel** : 400 €/mois = 21 membres à 19,90 € ou 14 membres à 29 €.
-Atteignable en **4 à 6 mois**. Plafond réaliste à 12 mois : 1 500 – 2 500 €/mois.
-
----
+### Modèle A — Club mensuel bas prix (15–29 €) sur la niche « 60 ans »
+- **Pour** : l'actif existe déjà, la niche est chronique, le payeur est occidental et paie par carte.
+- **Contre** : à 4 000 €, il faut 138 à 267 membres et 11 à 21 recrutements **par mois**, plus la
+  modération de 150+ personnes. Ça sort largement des 2–3 h/jour.
+- **Verdict** : excellent comme **brique**, insuffisant comme **modèle unique**.
 
 ### Modèle B — Abonnement « IA appliquée » pour indépendants du bien-être
-Pas « formation IA » générique. Angle étroit : l'IA pour les coachs, kinés, diététiciens,
-naturopathes, thérapeutes francophones — parce que tu es l'un d'eux et que tu sais coder un site.
+- **Pour** : cible B2B, tolérance de prix 29–49 €, tu empiles praticien + no-code + IA.
+- **Contre** : tes 13k Facebook sont généralistes et chercheurs de gratuit, pas des professionnels.
+  Acquisition quasi à froid. Marché saturé, prix en chute. Surtout : **le contenu IA se périme tous
+  les mois** — c'est le modèle le plus lourd à maintenir, pas le plus léger.
+- **Verdict** : à 4 000 €, il faudrait 82 à 138 abonnés professionnels acquis à froid. 18 mois minimum.
+  À écarter comme priorité.
 
-**Pourquoi ça peut marcher**
-- Tu empiles trois compétences rares ensemble : praticien bien-être + web no-code + IA.
-  « Je suis coach comme vous, voilà comment j'automatise mon activité » est un angle crédible.
-- Cible B2B : tolérance de prix bien supérieure (29–49 €/mois), dépense déductible pour eux.
-- Il faut seulement **11 à 14 membres** pour atteindre 400 €.
-
-**Risques et frictions**
-- Tes 13k Facebook sont une audience « IA pour les 40+ » — généraliste et chercheuse de gratuit.
-  Ce n'est pas une audience de professionnels du bien-être. Acquisition quasi à froid.
-- Marché saturé et prix en chute libre sur la formation IA.
-- **Coût de maintenance élevé** : l'IA change tous les mois, ton contenu se périme. C'est le
-  modèle le plus lourd à tenir dans la durée, pas le plus léger.
-
-**Potentiel** : 300 – 800 €/mois, mais ramp-up lent (6–9 mois) car il faut construire l'audience.
-
----
-
-### Modèle C — Abonnement de service : présence en ligne pour praticiens du bien-être
-Un forfait mensuel (site no-code + mises à jour + contenu assisté par IA) vendu à des petits
-praticiens : kinés, ostéos, salles de sport, diététiciens de Charleroi / Wallonie / Hauts-de-France.
-
-**Pourquoi ça peut marcher**
-- **Le plus rapide vers 400 €** : il suffit de 4 clients à 100 €/mois.
-- Tu as déjà la compétence (conception web) et la preuve (coachkone.com, ta page de vente).
-- Revenus B2B stables, factures nettes, pas de gestion de communauté.
-
-**Risques et frictions**
-- Ce n'est **pas un revenu passif** : c'est un service, avec des demandes clients imprévisibles.
-- Acquisition en un-à-un (prospection, terrain, réseau) — ton audience de 240k ne sert à rien ici.
-- Plafond bas : au-delà de 8–10 clients, tu es saturé.
-
-**Potentiel** : 400 – 1 500 €/mois, atteignable en **30 à 60 jours**, mais ça ne construit pas d'actif.
-
----
+### Modèle C — Forfait mensuel « présence en ligne » pour praticiens (B2B)
+- **Pour** : 8 clients à 500 € suffisent. Churn très bas. Compétence déjà acquise. Cash rapide.
+- **Contre** : c'est un **service**, pas un actif. Demandes clients imprévisibles. 8 retainers, c'est
+  4–5 h/jour, pas 2–3. Plafond structurel vers 10 clients.
+- **Verdict** : la voie la plus rapide et la plus certaine vers du cash, mais elle ne construit rien
+  et elle te rachète ton temps. Excellent en **transition**, mauvais en destination.
 
 ### Modèle écarté — monétiser l'audience africaine par abonnement bas prix
-Tentant sur le papier : 240k abonnés, un club à 3–5 €/mois, 100–130 membres suffisent.
-**À ne pas faire comme cœur d'activité**, pour trois raisons techniques :
+Tentant : 240k abonnés, un club à 3–5 €/mois. Il faudrait **800 à 1 300 membres** pour 4 000 €.
+À ne pas faire, pour trois raisons techniques :
 1. Le mobile money (Orange Money, Wave, Moov, MTN) gère mal le **prélèvement automatique récurrent** :
-   dans les faits, il faut relancer manuellement chaque membre chaque mois.
-2. 130 membres à animer et supporter pour 400 €, c'est le pire ratio effort/revenu de la liste.
-3. Le churn sur les paiements prépayés est massif (échec de prélèvement = résiliation de fait).
+   en pratique il faut relancer chaque membre manuellement chaque mois.
+2. 1 000 membres à animer et supporter, c'est le pire ratio effort/revenu de la liste.
+3. Le churn sur prépayé est massif : échec de prélèvement = résiliation de fait.
 
 Cette audience se monétise autrement : produits one-shot à 3–10 €, affiliation, partenariats de
-marque, revenus publicitaires. Pas par abonnement.
+marque, revenus publicitaires TikTok. **Pas par abonnement.**
 
 ---
 
-## 4. Ma recommandation : Modèle A
+## 5. Ma recommandation : l'escalier de valeur sur la niche « 60 ans »
 
-**Le club mensuel « 60 ans », adossé à ton produit existant.** Pour cinq raisons :
+Aucun modèle seul n'atteint 4 000 € en 2–3 h/jour. La combinaison, si.
 
-1. **L'actif est déjà construit.** Tu as les 5 modules, la page, le lead magnet, le checkout.
-   Les modèles B et C partent de zéro sur l'acquisition.
-2. **C'est la seule offre où tu es difficilement remplaçable.** Coach sportif diplômé + nutrition,
-   qui parle à des seniors francophones : c'est rare. « Formateur IA », c'est un marché encombré.
-3. **Le besoin est chronique, donc naturellement récurrent.** Une formation IA se consomme une
-   fois. Une raideur articulaire revient tous les matins. C'est ce qui fait tenir un abonnement.
-4. **Le payeur paie par carte.** Le prélèvement automatique fonctionne, contrairement au mobile money.
-5. **Tu as déjà un produit d'appel.** Le chemin vers 400 € est un *back-end* (une offre vendue juste
-   après un premier achat), pas un lancement à froid. C'est beaucoup plus court.
+**Structure recommandée — deux niveaux payants sur la même niche :**
 
-### Le calcul froid, pour que tu saches à quoi t'attendre
-Hypothèses conservatrices, à corriger avec tes vrais chiffres :
+| Niveau | Offre | Prix | Cible | Revenu |
+|---|---|---|---|---|
+| 0 | Lead magnet gratuit | 0 € | liste e-mail | 0 € |
+| 1 | Produit d'appel « 60 ans » (existant) | 15 € one-shot | filtre les acheteurs | trésorerie |
+| 2 | **Le Club Mobilité 60+** | 29 €/mois | 80 membres | 2 320 € |
+| 3 | **Le Cercle** (accompagnement de groupe, 12 places) | 149 €/mois | 12 membres | 1 788 € |
+| | | | **92 payants** | **4 108 €/mois** |
 
-| Étape | Hypothèse | Résultat |
-|---|---|---|
-| Campagne TikTok/FB de 2 semaines | 300–800 inscrits e-mail | 500 inscrits |
-| Part solvable (Europe francophone, 50+) | **inconnue** — à vérifier | 20 % → 100 personnes |
-| Achat du produit d'appel à 15 € | 4–8 % de la liste chaude | 5–10 ventes |
-| Passage à l'abonnement, proposé juste après l'achat | 10–20 % des acheteurs | 1–2 abonnés |
+**Pourquoi ça tient en 2–3 h/jour** : 92 clients payants, dont **seulement 12 consomment ton temps réel**.
+Le Club est du contenu diffusé (une séance vidéo par semaine, un live par mois) ; le Cercle est du
+temps humain, mais sur 12 personnes en groupe, pas en un-à-un.
 
-**Donc : 21 abonnés à 19,90 € demandent 4 à 8 cycles de lancement, soit 4 à 6 mois.**
-Ce n'est pas un plan à 30 jours. Le plan à 30 jours sert à **valider et lancer une bêta de 5–10 membres**.
+**Pourquoi ce modèle et pas un autre — cinq raisons :**
 
-Si ton besoin est d'avoir 400 € **dans 30 jours**, la seule réponse honnête est le **Modèle C**
-(4 clients à 100 €/mois). Il peut d'ailleurs financer le temps nécessaire au Modèle A.
+1. **L'actif est déjà construit** : 5 modules, page de vente, lead magnet, checkout Chariow.
+   Les modèles B et C repartent de zéro sur l'acquisition.
+2. **C'est la seule niche où tu es difficilement remplaçable.** Coach sportif + nutrition qui parle
+   à des seniors francophones : c'est rare. « Formateur IA », c'est un marché encombré.
+3. **Le besoin est chronique, donc naturellement récurrent.** Une formation IA se consomme une fois ;
+   une raideur articulaire revient tous les matins. C'est ce qui fait tenir un abonnement.
+4. **Le payeur paie par carte**, donc le prélèvement automatique fonctionne réellement.
+5. **Le Cercle à 149 € règle le problème du churn** : il porte 44 % du chiffre avec 13 % des clients.
 
-### Et l'IA pour les 40-50 ans ?
-C'est la direction que tu annonces, et c'est **le modèle le plus faible économiquement à court terme** :
-audience non qualifiée, marché saturé, contenu qui se périme vite. Ne l'abandonne pas — mais fais-en
-l'**offre n°2**, financée par l'offre n°1, une fois que tu as un revenu récurrent qui tourne.
+### La trajectoire réaliste (à corriger avec tes vrais chiffres)
+
+| Échéance | Club (29 €) | Cercle (149 €) | Revenu récurrent |
+|---|---|---|---|
+| Mois 1–2 (bêta) | 15 membres | 0 | ~435 € |
+| Mois 3–4 | 35 membres | 4 | ~1 611 € |
+| Mois 6 | 60 membres | 8 | ~2 932 € |
+| Mois 9 | 75 membres | 11 | ~3 814 € |
+| Mois 12 | 85 membres | 13 | ~4 402 € |
+
+**Dis-le-toi clairement : 4 000 €/mois récurrents, c'est un objectif à 9–12 mois, pas à 30 jours.**
+Quiconque te promet 4 000 € récurrents en 30 jours à partir d'une audience non solvable te ment.
+Le plan à 30 jours sert à poser la structure et à recruter les 15 premiers membres payants.
+
+### L'accélérateur de trésorerie (optionnel mais recommandé)
+
+Pendant les 6 premiers mois, **3 clients B2B à 500 €/mois** (Modèle C : sites + contenu IA pour
+kinés, ostéos, salles de sport de Wallonie) ajoutent 1 500 €/mois dès le 2ᵉ mois et financent ta
+montée en charge. Coût : environ 1 h/jour de plus — tu es alors au plafond de tes 3 h.
+À arrêter ou déléguer quand le Club dépasse 2 500 €.
+
+### Et l'IA pour les 40–50 ans ?
+C'est la direction que tu annonces, et c'est **le modèle le plus faible économiquement**. Ne
+l'abandonne pas : fais-en l'**offre n°3**, financée par les deux premières, une fois le récurrent installé.
 
 ---
 
-## 5. Points à vérifier côté belge (avant d'encaisser du récurrent)
+## 6. Le piège belge : 4 000 € encaissés ≠ 4 000 € dans ta poche
 
-- **Statut** : il faut un numéro d'entreprise (BCE) pour facturer légalement, même en indépendant
-  complémentaire. À régler avant le premier prélèvement.
-- **TVA** : sous le seuil de franchise belge (25 000 € de CA/an, chiffre à confirmer avec un
-  comptable), pas de TVA à facturer. Au-delà, les règles TVA des services électroniques
-  transfrontaliers B2C s'appliquent (guichet OSS).
-- **Vente en ligne B2C** : droit de rétractation de 14 jours ; pour du contenu numérique, il faut
+4 000 €/mois = **48 000 € de chiffre d'affaires par an**. Conséquences à anticiper dès maintenant :
+
+- **TVA obligatoire.** Le seuil de franchise belge (25 000 € de CA/an) est dépassé. Tu devras
+  facturer la TVA, donc soit augmenter tes prix TTC, soit absorber ~21 % de marge. À intégrer dans
+  la grille tarifaire **dès le départ**, pas après.
+- **Ventes B2C dans l'UE** : au-delà de 10 000 €/an de ventes transfrontalières de services
+  électroniques, la TVA du pays du client s'applique (guichet unique OSS). Chariow ne gère pas ça
+  pour toi — à vérifier avec un comptable avant de dépasser le seuil.
+- **Cotisations sociales d'indépendant** : de l'ordre de 20,5 % du revenu net imposable, plus l'impôt
+  des personnes physiques (barème progressif 25–50 %).
+- **Ordre de grandeur réaliste** : sur 48 000 € de CA, compte plutôt **22 000 à 28 000 € nets** selon
+  tes frais et ta situation familiale. Si tu veux 4 000 € **nets dans la poche**, il faut viser
+  6 500 à 7 000 €/mois de chiffre d'affaires. Tous ces chiffres sont à confirmer avec un comptable belge.
+- **Statut** : un numéro d'entreprise (BCE) est obligatoire pour facturer, même en indépendant
+  complémentaire. À régler **avant** le premier prélèvement récurrent.
+
+---
+
+## 7. Le risque n°1 à couvrir : les allégations santé
+
+Coach sportif ≠ soignant. Tu ne peux pas promettre de soigner, traiter ou guérir (arthrose, diabète,
+hernie). Ta niche diabète est déjà proche de la ligne rouge.
+
+- **Vocabulaire interdit** : soigner, guérir, traiter, remplacer un traitement, faire baisser la glycémie.
+- **Vocabulaire autorisé** : mobilité, souplesse, confort, amplitude, habitudes, bien-être, énergie.
+- **Obligatoire sur chaque page et chaque vidéo** : mention « Ce programme ne remplace pas un avis
+  médical. Consultez votre médecin avant de commencer, en particulier en cas de pathologie. »
+- **Vente en ligne B2C** : droit de rétractation de 14 jours ; pour du contenu numérique il faut
   faire renoncer explicitement le client à ce droit au moment de l'achat. À paramétrer dans Chariow.
-- **Allégations santé** : aucune promesse de soigner, traiter, guérir ou remplacer un avis médical.
-  Vocabulaire autorisé : mobilité, souplesse, confort, habitudes, bien-être.
 
 ---
 
-## 6. Ce dont j'ai besoin pour passer à l'étape 2 (design de l'offre)
+## 8. Données manquantes (à vérifier de ton côté pendant que j'avance)
 
-1. La répartition **géographique et par âge** de ton audience TikTok (TikTok Analytics → Abonnés →
-   Territoires / Âge). Sans ça, tout le reste est de la spéculation.
-2. Combien de ventes du produit à 15 € à ce jour, et le taux de conversion de la page.
+1. **TikTok Analytics → Abonnés → Territoires et Âge.** Quelle part de tes 240k est en France,
+   Belgique, Suisse, Canada ? Et quelle part a plus de 45 ans ? C'est la seule donnée qui peut
+   invalider ce plan. 5 minutes de vérification.
+   *Hypothèse retenue en attendant : 15 % d'Europe francophone, soit ~36 000 personnes solvables —
+   largement suffisant pour 92 clients payants.*
+2. Nombre de ventes du produit à 15 € à ce jour, et taux de conversion de la page.
 3. Ton statut légal actuel en Belgique.
-4. La taille de ta liste e-mail (si tu en as une) et l'outil utilisé.
+4. Taille de ta liste e-mail et outil utilisé.
