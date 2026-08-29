@@ -1,3 +1,5 @@
+> ⚠️ **Document remplacé.** Cette analyse partait du produit « 60 ans » déjà existant. La réflexion à jour, faite à partir de zéro, est dans `strategie/00-repartir-de-zero.md`.
+
 # Étape 2 — Design de l'offre
 
 Modèle retenu : escalier de valeur sur la niche « 60 ans », deux niveaux payants.

@@ -1,3 +1,5 @@
+> ⚠️ **Document remplacé.** Cette analyse partait du produit « 60 ans » déjà existant. La réflexion à jour, faite à partir de zéro, est dans `strategie/00-repartir-de-zero.md`.
+
 # Étape 1 — Analyse froide et choix du modèle (objectif : 4 000 €/mois)
 
 Date : 2026-08-29 · Coach KONE (Charleroi, Belgique) · Objectif corrigé : **4 000 €/mois récurrents**, 2–3 h/jour.
