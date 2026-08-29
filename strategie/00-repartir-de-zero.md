@@ -63,6 +63,38 @@ preuve que tu sais construire une seconde audience à partir de zéro.
 
 ---
 
+## 2 bis. Les deux rôles d'une audience — la distinction qui évite le contresens
+
+Une audience peut servir à deux choses **complètement différentes**, et confondre les deux fait
+choisir la mauvaise piste :
+
+| | **Rôle CANAL** | **Rôle PREUVE** |
+|---|---|---|
+| Ce qui se passe | tes abonnés deviennent les clients de celui qui te paie | tes abonnés ne deviennent client de personne |
+| Ce que l'acheteur achète | l'accès à ton audience | la démonstration que tu sais faire du contenu qui accroche |
+| La géographie de tes abonnés | **déterminante** | **sans importance** |
+| Piste concernée | B, et les cliniques africaines | A |
+
+**Conséquence directe.** Dans la piste A, un centre de perte de poids belge n'achète pas tes 240 000
+abonnés — il achète la preuve que tu sais faire regarder du contenu santé en français. Les vidéos
+sont publiées **sur le compte du client**, pas sur le tien : tes abonnés ne les voient jamais.
+
+**Le trafic local du client vient alors de deux sources**, et c'est le point à ne pas louper :
+1. **Un compte neuf géolocalisé** — l'algorithme diffuse localement un compte qui parle de perte de
+   poids avec des repères locaux. Mais c'est lent : 2 à 4 mois avant de décoller.
+2. **La publicité géociblée** (Meta Ads / TikTok Ads) — rayon de 20 km autour de la ville, 35-60 ans,
+   intérêt perte de poids. Budget payé **par le client**, en plus de tes honoraires. Fiable et immédiat.
+
+**C'est la vraie faiblesse de la piste A** : elle t'oblige à apprendre la publicité géociblée, un
+métier que tu ne connais pas. Ton compte prouve que tu sais faire de l'organique sur une audience
+francophone large ; il ne prouve pas que tu sais générer des rendez-vous locaux. Il te faudra un
+premier client à tarif réduit pour construire ce cas concret.
+
+**La piste B n'a pas ce problème** : ton audience y est le produit vendu, pas la preuve. Rien à
+construire. C'est pour cette raison qu'elle passe devant.
+
+---
+
 ## 3. Les trois pistes qui tiennent vraiment
 
 ### PISTE A — Studio d'acquisition patients pour la santé métabolique
@@ -169,9 +201,22 @@ premiers mois.
 **Ce que tu vends :** l'accès à un marché de 300 millions de francophones que les agences
 européennes ne savent pas atteindre, avec la sécurité d'un prestataire établi en Belgique.
 
-**À qui :** marques de compléments alimentaires et de parapharmacie, distributeurs de dispositifs
-médicaux (lecteurs de glycémie, tensiomètres), assureurs santé, start-up de télémédecine ciblant
-l'Afrique de l'Ouest, filiales africaines de groupes français.
+**À qui exactement, et pour combien :**
+
+| Acheteur | Pourquoi il paie | Budget mensuel réaliste |
+|---|---|---|
+| Marques de compléments alimentaires / parapharmacie distribuant en Afrique de l'Ouest | Elles vendent en Côte d'Ivoire, Sénégal, Cameroun et n'ont aucune audience organique là-bas | 1 500 – 2 500 € |
+| Distributeurs de lecteurs de glycémie, bandelettes, tensiomètres | Marché du diabète en croissance, aucun canal de confiance | 1 000 – 2 000 € |
+| **Cliniques privées, centres de bilan de santé, laboratoires à Abidjan, Dakar, Douala, Cotonou** | **Ton audience EST leur clientèle locale** | 400 – 800 € |
+| Assureurs santé africains (Sunu, NSIA, Saham…) | Vendre de l'assurance santé exige de la confiance, donc du contenu | 1 000 – 2 000 € |
+| Start-up de télémédecine francophones | Financées, en phase d'acquisition, sans canal organique | 800 – 1 500 € |
+
+**La ligne la plus importante est la troisième.** Une clinique privée à Abidjan ou un centre de bilan
+de santé à Dakar cible **exactement** les gens qui te suivent déjà. Là, ton audience joue le rôle
+CANAL et non plus seulement le rôle PREUVE — c'est le seul cas où tes 240k travaillent directement
+pour le client.
+
+**Un mix réaliste : 1 marque européenne à 2 000 € + 3 cliniques africaines à 600 € = 3 800 €/mois.**
 
 **Pourquoi tu es bien placé :** ces entreprises ont des budgets marketing réels, aucune audience
 organique en Afrique francophone, et une méfiance forte envers les prestataires locaux non
@@ -183,7 +228,11 @@ structurés. Tu es européen, facturable, contractualisable — **et tu as l'aud
 **Plafond :** beaucoup plus haut que la piste A. À 5 clients, on parle de 8 000 à 12 000 €/mois.
 
 **Risques, sans les cacher :**
-- **Cycle de vente long** : 3 à 6 mois entre le premier contact et la signature. Ce sont des
+- **Recouvrement.** Un client africain qui ne paie pas, tu n'as aucun recours pratique.
+  **Règle absolue : paiement d'avance, chaque mois, avant production. Jamais de facture à 30 jours.**
+- **Budgets plus serrés et négociation plus dure** côté africain. Ne descends jamais sous 400 €/mois :
+  en dessous, tu travailles à perte.
+- **Cycle de vente long** côté marques européennes : 3 à 6 mois entre le premier contact et la signature. Ce sont des
   services marketing d'entreprise, pas des indépendants qui décident seuls.
 - Il te faut un **média kit** professionnel : démographie détaillée de ton audience, taux
   d'engagement, exemples de campagnes. Tu ne peux pas pitcher sans ça.
@@ -241,13 +290,19 @@ population. Un contrat de programme de prévention se négocie entre 1 500 et 4 
 
 ## 4. Ma recommandation
 
-**Lance la PISTE A comme moteur. Construis la PISTE C en parallèle, sans travail supplémentaire.
-Garde la PISTE B pour le mois 6.**
+> **Recommandation révisée.** J'avais initialement placé la piste A en premier « parce qu'elle est
+> activable vite ». C'est faux : elle exige de construire un canal d'acquisition local que tu n'as pas
+> (voir §2 bis). La piste B, elle, vend l'audience telle qu'elle est, là où elle est — rien à construire.
+> **B passe en première position.**
 
-**Pourquoi A d'abord :** c'est la seule des trois qui atteint 4 000 € en moins de 6 mois. 4 clients,
-pas 138. Aucun besoin que ton audience soit solvable. Aucune compétence technique nouvelle à
-acquérir sur le fond — seulement la prospection B2B. Et la trésorerie arrive dès le premier client
-signé, pas au bout d'un an de construction d'audience.
+**Lance la PISTE B comme moteur. Construis la PISTE C en parallèle, sans travail supplémentaire.
+Ouvre la PISTE A au mois 4–6, quand la trésorerie permet d'apprendre la publicité géociblée sans pression.**
+
+**Pourquoi B d'abord :** c'est la seule piste où tu vends un actif que tu possèdes **déjà**, sans
+construire aucun canal nouveau. Ton audience n'a pas besoin d'être solvable — elle a besoin d'être
+**atteignable par quelqu'un qui veut la toucher**, et elle l'est. 2 à 4 clients suffisent, contre 138
+en vente directe. Et les cliniques privées d'Abidjan ou de Dakar sont le seul cas où tes 240k
+travaillent directement pour le client qui te paie.
 
 **Pourquoi C en même temps, et pourquoi ça ne coûte rien :** le contenu que tu produis pour tes
 clients de la piste A porte sur **exactement le même sujet** que la piste C — surpoids, glycémie,
@@ -255,34 +310,39 @@ alimentation, métabolisme. Tu tournes déjà. Publier une variante sur ton prop
 diaspora, ne demande pas une heure de plus. Au bout de 9 mois, tu auras une audience solvable
 construite gratuitement, pendant que la piste A payait les factures.
 
-**Pourquoi B seulement au mois 6 :** son cycle de vente est trop long pour être ta seule source de
-revenu au départ, et il te faut un média kit sérieux que tu n'as pas encore. Mais son plafond est le
-plus élevé des trois — c'est là que se trouvent les 10 000 €/mois, si tu les veux un jour.
+**Pourquoi A seulement au mois 4–6 :** elle demande une compétence que tu n'as pas — la publicité
+géociblée — et un premier cas concret local que tu devras vendre à tarif réduit pour l'obtenir.
+Ce n'est pas un mauvais modèle, c'est un mauvais **premier** modèle. Une fois la piste B installée,
+A devient un excellent second pilier : paiements européens sûrs, budgets plus élevés, clients
+juridiquement solvables.
 
 ### Trajectoire
 
-| Échéance | Piste A | Piste C | Total mensuel |
+| Échéance | Piste B (moteur) | Piste C (en parallèle) | Total mensuel |
 |---|---|---|---|
-| Mois 1–2 | prospection, 1er client signé | contenu diaspora lancé | ~1 000 € |
-| Mois 3 | 2 clients | audience en construction | ~2 000 € |
-| Mois 4–5 | 3 clients | 1ᵉʳ produit testé | ~3 000 € |
-| Mois 6 | 4 clients + média kit piste B | audience qualifiée | **~4 000 €** |
-| Mois 9–12 | 5–6 clients ou 1 client piste B | abonnement ou contrat institutionnel | 5 000 – 7 000 € |
+| Mois 1 | média kit construit, prospection lancée | contenu diaspora lancé | 0 € |
+| Mois 2–3 | 1–2 cliniques africaines signées | audience en construction | 600 – 1 200 € |
+| Mois 4–5 | 3 cliniques + 1ʳᵉ marque en négociation | 1ᵉʳ produit testé | 1 800 – 2 500 € |
+| Mois 6–7 | 1 marque européenne signée + 3 cliniques | audience qualifiée | **~3 800 €** |
+| Mois 9–12 | 2 marques + cliniques, ou 1ᵉʳ client piste A | abonnement ou contrat institutionnel | 5 000 – 8 000 € |
 
 ### Ce que tu dois accepter pour que ça marche
 
-1. **Apprendre la prospection B2B.** C'est la compétence qui te manque et c'est la seule qui bloque.
-   Rien à voir avec la création de contenu. Compte 1 h/jour pendant 3 mois.
-2. **Arrêter de juger la réussite au nombre de vues.** Ton nouveau tableau de bord, c'est le nombre
+1. **Construire ton média kit avant tout le reste.** Répartition par pays, par âge, par sexe, taux
+   d'engagement, meilleures performances, exemples de contenus. Tu ne peux approcher **aucun** des
+   acheteurs de la piste B sans ce document. 2 à 3 heures de travail, et c'est bloquant pour tout.
+2. **Apprendre la prospection B2B.** C'est la compétence qui te manque et c'est la seule qui bloque
+   ensuite. Rien à voir avec la création de contenu. Compte 1 h/jour pendant 3 mois.
+3. **Arrêter de juger la réussite au nombre de vues.** Ton nouveau tableau de bord, c'est le nombre
    de rendez-vous obtenus et de contrats signés. Une vidéo à 4 vues qui amène un client à 1 000 €
    vaut mieux qu'une à 400 000 vues qui n'amène rien.
-3. **Facturer 1 000 € sans t'excuser.** Ton problème depuis le début est un problème de prix, pas
+4. **Facturer ton prix sans t'excuser.** Ton problème depuis le début est un problème de prix, pas
    d'audience. Un centre de perte de poids qui gagne 1 500 € par patient ne trouve pas 1 000 €/mois cher.
-4. **Régler le statut belge maintenant.** Numéro d'entreprise (BCE) obligatoire pour facturer.
+5. **Régler le statut belge maintenant.** Numéro d'entreprise (BCE) obligatoire pour facturer.
    Au-delà de 25 000 € de CA annuel, la TVA devient obligatoire — à 4 000 €/mois tu es à 48 000 €,
    donc largement au-dessus. En B2B c'est indolore (ton client la récupère), mais il faut l'afficher
    dès le premier devis. À confirmer avec un comptable belge.
-5. **4 000 € encaissés ≠ 4 000 € dans la poche.** Sur 48 000 € de CA, compte 22 000 à 28 000 € nets
+6. **4 000 € encaissés ≠ 4 000 € dans la poche.** Sur 48 000 € de CA, compte 22 000 à 28 000 € nets
    après cotisations sociales (~20,5 %) et impôt. Pour 4 000 € **nets**, vise 6 500–7 000 €/mois de CA.
 
 ---
@@ -290,8 +350,14 @@ plus élevé des trois — c'est là que se trouvent les 10 000 €/mois, si tu 
 ## 5. La seule donnée qui peut invalider ce plan
 
 **Rien ici ne dépend de la solvabilité de tes 240k** — c'est précisément pour ça que ce plan est
-robuste. Les pistes A et B fonctionnent même si 100 % de ton audience est en Afrique.
+robuste. La piste B fonctionne d'autant mieux que ton audience est africaine : c'est exactement ce
+que ses acheteurs veulent atteindre. La piste A fonctionne même si 100 % de ton audience est en
+Afrique, puisqu'elle n'utilise ton compte que comme preuve.
 
-Une seule vérification change quelque chose, et seulement pour la piste C :
+**La seule piste sensible à la géographie est la C.** Vérifie donc, mais sans urgence :
 **TikTok Analytics → Abonnés → Territoires et Âge.** Si la France et la Belgique représentent moins
-de 5 % de tes abonnés, la piste C part de trop bas et il faut la remplacer par la piste B au mois 3.
+de 5 % de tes abonnés, la piste C part de trop bas — abandonne-la et concentre tout sur B, puis A.
+
+En revanche, cette même donnée est **le cœur de ton média kit** pour la piste B : un acheteur qui
+veut toucher la Côte d'Ivoire veut savoir combien d'Ivoiriens te suivent. Ce que tu vas extraire
+n'est pas une vérification, c'est ton argument de vente principal.
