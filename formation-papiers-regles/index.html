@@ -1,0 +1,934 @@
+<title>Papiers Réglés</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500&family=Source+Sans+3:wght@300;400;600;700&display=swap">
+<style>
+:root{
+  --paper:#EFEFEA;
+  --card:#FFFFFF;
+  --card-2:#F7F6F1;
+  --ink:#141C24;
+  --ink-soft:#525D67;
+  --rule:#D7D6CD;
+  --rule-soft:#E6E5DD;
+  --tampon:#B7362C;
+  --tampon-soft:#F7E5E2;
+  --bic:#2B4A78;
+  --bic-soft:#E5EAF3;
+  --kraft:#C6AE80;
+  --kraft-soft:#F1E8D6;
+  --shadow:0 1px 2px rgba(20,28,36,.06), 0 8px 24px -16px rgba(20,28,36,.28);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#12161A;
+    --card:#1A2026;
+    --card-2:#161C21;
+    --ink:#E9E7E1;
+    --ink-soft:#9BA5AE;
+    --rule:#2B343C;
+    --rule-soft:#232B32;
+    --tampon:#E47364;
+    --tampon-soft:#33201D;
+    --bic:#88A9DC;
+    --bic-soft:#1C2531;
+    --kraft:#BBA279;
+    --kraft-soft:#282218;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#12161A;
+  --card:#1A2026;
+  --card-2:#161C21;
+  --ink:#E9E7E1;
+  --ink-soft:#9BA5AE;
+  --rule:#2B343C;
+  --rule-soft:#232B32;
+  --tampon:#E47364;
+  --tampon-soft:#33201D;
+  --bic:#88A9DC;
+  --bic-soft:#1C2531;
+  --kraft:#BBA279;
+  --kraft-soft:#282218;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Source Sans 3','Segoe UI',system-ui,sans-serif;
+  font-size:18px;
+  line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+  font-family:'Bricolage Grotesque','Source Sans 3',system-ui,sans-serif;
+  font-weight:800;
+  line-height:1.08;
+  text-wrap:balance;
+  margin:0;
+  letter-spacing:-.015em;
+}
+p{margin:0}
+a{color:var(--bic)}
+:focus-visible{outline:2.5px solid var(--tampon);outline-offset:3px;border-radius:2px}
+
+.wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+.narrow{max-width:720px}
+
+.eyebrow{
+  font-family:'JetBrains Mono',ui-monospace,monospace;
+  font-size:11.5px;
+  font-weight:500;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--tampon);
+}
+.eyebrow--ink{color:var(--ink-soft)}
+
+section{padding:74px 0;border-top:1px solid var(--rule-soft)}
+.sec-head{display:flex;flex-direction:column;gap:14px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(30px,4.4vw,44px)}
+.sec-head p{color:var(--ink-soft);max-width:64ch;font-size:19px}
+
+/* ── HERO ───────────────────────────────── */
+.hero{
+  border-top:none;
+  padding:64px 0 78px;
+  position:relative;
+  overflow:hidden;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    repeating-linear-gradient(180deg,transparent 0 33px,var(--rule-soft) 33px 34px);
+  opacity:.55;
+  mask-image:linear-gradient(180deg,transparent,#000 18%,#000 62%,transparent);
+  -webkit-mask-image:linear-gradient(180deg,transparent,#000 18%,#000 62%,transparent);
+  pointer-events:none;
+}
+.hero .wrap{position:relative}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:10px;
+  border:1.5px solid var(--tampon);
+  color:var(--tampon);
+  padding:6px 14px;
+  border-radius:2px;
+  font-family:'JetBrains Mono',ui-monospace,monospace;
+  font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+  transform:rotate(-1.2deg);
+}
+h1{
+  font-size:clamp(52px,10.5vw,116px);
+  line-height:.92;
+  letter-spacing:-.035em;
+  margin:26px 0 0;
+}
+h1 em{
+  font-style:normal;
+  color:var(--tampon);
+}
+.sub{
+  font-size:clamp(20px,2.5vw,26px);
+  line-height:1.4;
+  color:var(--ink);
+  max-width:23ch;
+  margin-top:24px;
+  font-weight:600;
+  font-family:'Bricolage Grotesque','Source Sans 3',sans-serif;
+  text-wrap:balance;
+}
+.promise{
+  margin-top:26px;
+  max-width:56ch;
+  font-size:19px;
+  color:var(--ink-soft);
+}
+.promise strong{color:var(--ink);font-weight:600}
+
+.facts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:1px;
+  background:var(--rule);
+  border:1px solid var(--rule);
+  border-radius:3px;
+  margin-top:44px;
+  overflow:hidden;
+}
+.fact{background:var(--card);padding:20px 22px;display:flex;flex-direction:column;gap:5px}
+.fact b{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:29px;font-weight:800;line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.fact span{font-size:14.5px;color:var(--ink-soft);line-height:1.35}
+
+/* ── BLOCS GÉNÉRIQUES ───────────────────── */
+.card{
+  background:var(--card);
+  border:1px solid var(--rule);
+  border-radius:4px;
+  padding:26px 28px;
+  box-shadow:var(--shadow);
+}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+
+.contrast{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:20px;
+}
+.contrast .card h4{font-size:19px;margin-bottom:14px}
+.contrast ul{margin:0;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:11px}
+.contrast li{padding-left:26px;position:relative;font-size:17px;line-height:1.5}
+.no li::before{content:"×";position:absolute;left:4px;top:-1px;color:var(--ink-soft);font-size:20px;font-weight:700}
+.yes li::before{content:"→";position:absolute;left:0;top:0;color:var(--tampon);font-weight:700}
+.no{background:var(--card-2)}
+.no h4{color:var(--ink-soft)}
+.yes{border-color:var(--tampon)}
+.yes h4{color:var(--tampon)}
+
+/* ── MÉTHODE 3P ─────────────────────────── */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.step{
+  background:var(--card);
+  border:1px solid var(--rule);
+  border-top:4px solid var(--tampon);
+  border-radius:4px;
+  padding:26px;
+  display:flex;flex-direction:column;gap:12px;
+  box-shadow:var(--shadow);
+}
+.step-n{
+  font-family:'JetBrains Mono',monospace;
+  font-size:12px;letter-spacing:.16em;color:var(--tampon);font-weight:500;
+}
+.step h3{font-size:26px}
+.step p{font-size:17px;color:var(--ink-soft)}
+
+/* ── MODULES ────────────────────────────── */
+.modules{display:flex;flex-direction:column;gap:34px}
+.module{
+  background:var(--card);
+  border:1px solid var(--rule);
+  border-radius:4px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.mod-head{
+  padding:26px 28px 24px;
+  border-bottom:1px solid var(--rule);
+  background:var(--card-2);
+  display:flex;flex-direction:column;gap:10px;
+}
+.mod-tag{
+  align-self:flex-start;
+  background:var(--kraft-soft);
+  color:var(--ink);
+  border:1px solid var(--kraft);
+  border-radius:2px;
+  padding:4px 11px;
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:500;
+}
+.mod-head h3{font-size:clamp(25px,3.4vw,33px)}
+.mod-head .goal{color:var(--ink-soft);font-size:17.5px;max-width:62ch}
+.mod-head .goal b{color:var(--tampon);font-weight:600}
+
+.lessons{display:flex;flex-direction:column}
+.lesson{
+  display:grid;
+  grid-template-columns:64px 1fr;
+  gap:0 20px;
+  padding:24px 28px;
+  border-bottom:1px solid var(--rule-soft);
+}
+.lesson:last-child{border-bottom:none}
+.l-n{
+  font-family:'JetBrains Mono',monospace;
+  font-size:13px;font-weight:500;
+  color:var(--bic);
+  padding-top:3px;
+  font-variant-numeric:tabular-nums;
+}
+.l-body{display:flex;flex-direction:column;gap:12px}
+.l-body h4{font-size:20.5px;font-weight:600;letter-spacing:-.01em}
+.l-rows{display:flex;flex-direction:column;gap:9px}
+.l-row{display:grid;grid-template-columns:112px 1fr;gap:14px;align-items:baseline}
+.l-key{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--ink-soft);padding-top:4px;
+}
+.l-val{font-size:17px;line-height:1.52}
+.l-val.win{color:var(--tampon);font-weight:600}
+
+/* ── PHRASES ────────────────────────────── */
+.phrases{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px}
+.phrase{
+  background:var(--card);
+  border:1px solid var(--rule);
+  border-left:4px solid var(--bic);
+  border-radius:3px;
+  padding:20px 22px;
+  display:flex;flex-direction:column;gap:11px;
+}
+.phrase .t{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--bic);font-weight:500;
+}
+.phrase q{
+  font-family:'JetBrains Mono',ui-monospace,monospace;
+  font-size:14.5px;
+  line-height:1.62;
+  quotes:none;
+  color:var(--ink);
+}
+.phrase .use{font-size:15px;color:var(--ink-soft);line-height:1.45}
+
+/* ── KIT ────────────────────────────────── */
+.kit{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:18px}
+.kit-item{
+  background:var(--card);
+  border:1px solid var(--rule);
+  border-radius:4px;
+  padding:22px 24px;
+  display:flex;flex-direction:column;gap:9px;
+}
+.kit-item h4{font-size:19px;font-weight:600}
+.kit-item p{font-size:16.5px;color:var(--ink-soft);line-height:1.5}
+.kit-item .fmt{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--kraft);font-weight:500;
+}
+
+/* ── GARDE-FOUS ─────────────────────────── */
+.rail{
+  border-left:4px solid var(--tampon);
+  background:var(--tampon-soft);
+  border-radius:0 4px 4px 0;
+  padding:24px 26px;
+  display:flex;flex-direction:column;gap:12px;
+}
+.rail h4{font-size:20px;color:var(--tampon)}
+.rail p,.rail li{font-size:17px;line-height:1.55}
+.rail ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:7px}
+
+/* ── TABLEAU VALEUR ─────────────────────── */
+.table-scroll{overflow-x:auto;border:1px solid var(--rule);border-radius:4px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:17px}
+th,td{text-align:left;padding:14px 20px;border-bottom:1px solid var(--rule-soft)}
+th{
+  font-family:'JetBrains Mono',monospace;
+  font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-soft);font-weight:500;background:var(--card-2);
+}
+td:last-child,th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr:last-child td{border-bottom:none}
+tfoot td{
+  border-top:2px solid var(--ink);
+  font-weight:700;
+  background:var(--card-2);
+}
+.strike{color:var(--ink-soft);text-decoration:line-through}
+
+/* ── PRIX ───────────────────────────────── */
+.price-box{
+  background:var(--card);
+  border:2px solid var(--tampon);
+  border-radius:4px;
+  padding:34px;
+  display:flex;flex-direction:column;gap:18px;
+  box-shadow:var(--shadow);
+}
+.price-line{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.price-line b{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-size:64px;font-weight:800;line-height:1;color:var(--tampon);
+  letter-spacing:-.04em;
+}
+.price-line span{font-size:18px;color:var(--ink-soft)}
+.price-box ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;font-size:17px}
+
+.launch{display:flex;flex-direction:column;gap:0}
+.beat{
+  display:grid;
+  grid-template-columns:96px 1fr;
+  gap:20px;
+  padding:20px 0;
+  border-bottom:1px solid var(--rule-soft);
+}
+.beat:last-child{border-bottom:none}
+.beat .when{
+  font-family:'JetBrains Mono',monospace;
+  font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--tampon);
+  padding-top:5px;font-weight:500;
+}
+.beat h4{font-size:19px;font-weight:600;margin-bottom:6px}
+.beat p{font-size:16.5px;color:var(--ink-soft);line-height:1.5}
+
+footer{
+  border-top:1px solid var(--rule);
+  padding:40px 0 60px;
+  color:var(--ink-soft);
+  font-size:15.5px;
+}
+footer .wrap{display:flex;flex-direction:column;gap:8px}
+
+@media (max-width:620px){
+  body{font-size:17px}
+  .wrap{padding:0 20px}
+  section{padding:56px 0}
+  .lesson{grid-template-columns:1fr;gap:10px}
+  .l-n{padding-top:0}
+  .l-row{grid-template-columns:1fr;gap:2px}
+  .l-key{padding-top:0}
+  .beat{grid-template-columns:1fr;gap:6px}
+  .beat .when{padding-top:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+
+<main>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="wrap">
+    <span class="hero-tag">Formation IA · 40 ans et plus · Débutant total</span>
+    <h1>Papiers<br><em>Réglés</em></h1>
+    <p class="sub">Vous photographiez le papier. L'assistant fait le reste.</p>
+    <p class="promise">En 4 semaines, votre téléphone devient l'assistant qui <strong>décode</strong> vos papiers compliqués, <strong>écrit</strong> les courriers que vous n'osez pas écrire et <strong>compare</strong> les offres à votre place. Aucune ligne de code. Aucun mot technique. Une seule application.</p>
+
+    <div class="facts">
+      <div class="fact"><b>4</b><span>semaines, 1 leçon par jour ouvré</span></div>
+      <div class="fact"><b>11 min</b><span>par leçon, jamais plus</span></div>
+      <div class="fact"><b>12</b><span>phrases prêtes à copier</span></div>
+      <div class="fact"><b>1</b><span>seule application à installer</span></div>
+      <div class="fact"><b>200 €</b><span>ou 2 × 105 €</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ POSITIONNEMENT ══ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">01 — Le positionnement</span>
+      <h2>On n'apprend pas « l'IA ». On règle une pile de papiers.</h2>
+      <p>Les formations IA pour débutants enseignent un <em>outil</em>. Celle-ci règle des <em>dossiers</em> : la mutuelle, le devis de l'artisan, le relevé de carrière, le courrier au syndic, le dossier d'aide des parents. Le résultat est un papier signé, pas une compétence abstraite.</p>
+    </div>
+
+    <div class="contrast">
+      <div class="card no">
+        <h4>Ce que ce n'est pas</h4>
+        <ul>
+          <li>Un cours sur « comment bien prompter »</li>
+          <li>Un tour d'horizon de 30 outils IA</li>
+          <li>Des explications sur le fonctionnement des modèles</li>
+          <li>Des exercices sans rapport avec votre vie</li>
+          <li>8 heures de vidéo qu'on ne finit jamais</li>
+        </ul>
+      </div>
+      <div class="card yes">
+        <h4>Ce que c'est</h4>
+        <ul>
+          <li>12 gestes concrets, sur vos propres papiers</li>
+          <li>Une seule application, installée avec vous</li>
+          <li>Un carnet de 12 phrases à copier telles quelles</li>
+          <li>Un vrai courrier envoyé dès la semaine 1</li>
+          <li>2 h 12 de vidéo au total, et c'est fini</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:24px;border-left:4px solid var(--bic)">
+      <span class="eyebrow eyebrow--ink">La transformation promise</span>
+      <p style="margin-top:12px;font-size:20px;line-height:1.5">Avant : l'enveloppe reste 3 semaines sur le buffet.<br>
+      Après : vous l'ouvrez, vous prenez une photo, et <b style="color:var(--tampon)">vous savez quoi faire en 3 minutes</b>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ MÉTHODE ══ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">02 — La méthode</span>
+      <h2>La méthode 3P</h2>
+      <p>Le blocage numéro un d'un débutant, ce n'est pas la technique : c'est la page blanche. « Je ne sais pas quoi lui écrire. » La méthode 3P supprime la page blanche. Vous ne rédigez jamais rien de zéro.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <span class="step-n">P 1</span>
+        <h3>Photo</h3>
+        <p>Vous masquez au marqueur noir les 4 lignes sensibles, puis vous photographiez le document avec votre téléphone. C'est tout : pas de scanner, pas de fichier à retrouver.</p>
+      </div>
+      <div class="step">
+        <span class="step-n">P 2</span>
+        <h3>Phrase</h3>
+        <p>Vous ouvrez le carnet, vous choisissez une des 12 phrases, vous la copiez telle quelle. Vous ne cherchez pas vos mots : ils sont déjà écrits.</p>
+      </div>
+      <div class="step">
+        <span class="step-n">P 3</span>
+        <h3>Papier</h3>
+        <p>Vous récupérez une explication en français simple, un tableau comparatif ou un courrier prêt à relire, corriger et signer. Vous restez celui qui décide.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CURRICULUM ══ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">03 — Le curriculum</span>
+      <h2>4 semaines, 12 leçons, 12 victoires</h2>
+      <p>Une leçon = un concept, un cas pratique tiré de la vraie vie, un résultat que vous tenez entre les mains le soir même. Rien d'exhaustif : uniquement ce qui sert.</p>
+    </div>
+
+    <div class="modules">
+
+      <!-- MODULE 1 -->
+      <article class="module">
+        <div class="mod-head">
+          <span class="mod-tag">Semaine 1 · Décoder</span>
+          <h3>Comprendre ce qu'un papier dit vraiment</h3>
+          <p class="goal">À la fin de la semaine, vous ouvrez n'importe quel courrier et vous savez <b>ce qu'il veut, ce qu'il coûte et pour quand</b>.</p>
+        </div>
+        <div class="lessons">
+
+          <div class="lesson">
+            <span class="l-n">1.1</span>
+            <div class="l-body">
+              <h4>Votre téléphone devient une paire de lunettes</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">L'assistant sait lire une photo. Vous n'avez rien à retaper. Installation guidée, écran par écran, doigt par doigt.</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">Votre dernière facture d'électricité ou de gaz : pourquoi ce montant, qu'est-ce qui a changé depuis la précédente.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">Votre première réponse claire, obtenue en 4 minutes, sur un vrai papier à vous.</span></div>
+                <div class="l-row"><span class="l-key">La règle</span><span class="l-val"><b>Le marqueur noir</b> — on masque numéro de sécu, IBAN, numéro fiscal et adresse complète avant de photographier. Appris dès la première minute, jamais après.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lesson">
+            <span class="l-n">1.2</span>
+            <div class="l-body">
+              <h4>« Explique-moi ça comme à un ami »</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">Demander une traduction, pas un résumé. La différence tient en trois mots ajoutés à la fin de votre phrase.</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">Le tableau de garanties de votre mutuelle — celui avec les pourcentages que personne ne comprend.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">Vous savez enfin ce que votre mutuelle rembourse vraiment sur les lunettes et les dents.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lesson">
+            <span class="l-n">1.3</span>
+            <div class="l-body">
+              <h4>Faire sortir les pièges du document</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">Un document ne cache pas ses pièges : il les enterre. On apprend à demander explicitement « ce qui peut me coûter de l'argent ».</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">Un contrat en cours : téléphonie, salle de sport, assurance, alarme, abonnement logiciel.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">La liste datée des frais cachés, reconductions tacites et délais de résiliation. Premier gain en euros de la formation.</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- MODULE 2 -->
+      <article class="module">
+        <div class="mod-head">
+          <span class="mod-tag">Semaine 2 · Répondre</span>
+          <h3>Écrire le courrier que vous n'osez pas écrire</h3>
+          <p class="goal">À la fin de la semaine, vous avez <b>envoyé un vrai courrier</b> que vous repoussiez depuis des mois.</p>
+        </div>
+        <div class="lessons">
+
+          <div class="lesson">
+            <span class="l-n">2.1</span>
+            <div class="l-body">
+              <h4>La lettre de contestation, ferme mais correcte</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">Une bonne réclamation tient en une page : les faits, la demande, la date de réponse attendue. On dicte les faits, l'assistant met en forme.</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">Frais bancaires prélevés à tort, franchise d'assurance contestable, facture d'opérateur gonflée, charges de copropriété inexpliquées.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">Une lettre imprimée, signée, postée — pendant la leçon.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lesson">
+            <span class="l-n">2.2</span>
+            <div class="l-body">
+              <h4>Le message professionnel difficile</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">Dire non, relancer, négocier, annoncer un retard : quatre situations, une même structure de message.</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">Refuser une mission mal payée sans fermer la porte. Relancer un client ou un employeur silencieux depuis 3 semaines. Demander un entretien d'augmentation.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">Un message envoyé en 6 minutes au lieu d'une heure de rumination.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lesson">
+            <span class="l-n">2.3</span>
+            <div class="l-body">
+              <h4>Choisir le ton, ne pas le subir</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">On ne corrige pas un texte : on en demande trois versions — ferme, diplomate, très courte — et on choisit. C'est le geste qui change tout.</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">Le message familial délicat : la succession, l'organisation autour d'un parent, la dépense partagée entre frères et sœurs.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">Le texte exact que vous vouliez écrire, sans la phrase de trop.</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- MODULE 3 -->
+      <article class="module">
+        <div class="mod-head">
+          <span class="mod-tag">Semaine 3 · Décider</span>
+          <h3>Les gros dossiers de la deuxième moitié de vie</h3>
+          <p class="goal">À la fin de la semaine, vous avez avancé sur <b>le dossier que vous repoussez depuis deux ans</b>.</p>
+        </div>
+        <div class="lessons">
+
+          <div class="lesson">
+            <span class="l-n">3.1</span>
+            <div class="l-body">
+              <h4>Votre retraite : lire le relevé, poser les bonnes questions</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">Un relevé de carrière se lit ligne par ligne. L'assistant repère les trous, les années incomplètes, les employeurs manquants — vous, vous allez vérifier auprès de la caisse.</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">Votre relevé de carrière téléchargé sur Info Retraite, années d'intérim, de chômage, d'apprentissage et de congé parental comprises.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">La liste écrite des points à faire corriger, et à qui l'envoyer. Le dossier le plus rentable de la formation.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lesson">
+            <span class="l-n">3.2</span>
+            <div class="l-body">
+              <h4>Comparer deux offres sans se faire avoir</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">Deux photos, une phrase, un tableau. On compare ce qui est comparable : prix à l'année, ce qui est couvert, ce qui ne l'est pas, durée d'engagement.</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">Deux devis de travaux (fenêtres, chaudière, toiture), deux mutuelles, deux offres d'assurance emprunteur, deux propositions de placement.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">Un tableau d'une page + les 5 questions à poser avant de signer.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lesson">
+            <span class="l-n">3.3</span>
+            <div class="l-body">
+              <h4>Aider ses parents, aider ses enfants</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">Un dossier d'aide, c'est une suite d'étapes et de pièces à fournir. On demande la liste numérotée, dans l'ordre, avec qui contacter à chaque étape.</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">Côté parents : maintien à domicile, dossier d'aide départementale, entrée en établissement, aménagement du logement. Côté enfants : dossier d'orientation, lettre de motivation, demande de logement ou de bourse.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">Une feuille de route numérotée, avec les bons interlocuteurs et les pièces à réunir.</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- MODULE 4 -->
+      <article class="module">
+        <div class="mod-head">
+          <span class="mod-tag">Semaine 4 · Tenir</span>
+          <h3>Ne plus jamais être seul devant un papier</h3>
+          <p class="goal">À la fin de la semaine, vous avez <b>une habitude de 20 minutes par semaine</b> qui tient toute seule.</p>
+        </div>
+        <div class="lessons">
+
+          <div class="lesson">
+            <span class="l-n">4.1</span>
+            <div class="l-body">
+              <h4>Quand l'assistant se trompe : les 5 vérifications</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">L'assistant est comme un ami très cultivé qui préfère inventer plutôt que dire « je ne sais pas ». On apprend à repérer ça en 30 secondes : les chiffres, les dates, les articles de loi, les noms d'organismes, les montants.</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">On lui fait volontairement produire une erreur, en direct, sur un cas réel — puis on la débusque ensemble.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">Le réflexe de contrôle, et la fiche « L'assistant a-t-il raison ? » sur le bureau.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lesson">
+            <span class="l-n">4.2</span>
+            <div class="l-body">
+              <h4>Ce qu'on ne met jamais dedans — et quand appeler un vrai professionnel</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">Deux limites nettes : la limite des données (ce qui ne sort jamais de chez vous) et la limite du conseil (les dossiers qui exigent un humain qualifié).</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">On trie ensemble 10 situations réelles : celles qu'on règle seul, celles qu'on prépare avec l'assistant avant d'aller voir un professionnel, celles où l'on décroche le téléphone tout de suite.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">La fiche des limites + le carnet d'adresses des recours gratuits en France.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lesson">
+            <span class="l-n">4.3</span>
+            <div class="l-body">
+              <h4>Le rituel du dimanche : 20 minutes, la pile est vide</h4>
+              <div class="l-rows">
+                <div class="l-row"><span class="l-key">Le concept</span><span class="l-val">Une habitude tient quand elle a un lieu, une heure et une fin. Vingt minutes, la pile du buffet, trois piles à l'arrivée : réglé, à envoyer, à surveiller.</span></div>
+                <div class="l-row"><span class="l-key">Le cas</span><span class="l-val">On vide en direct la pile de papiers en retard que chacun a apportée.</span></div>
+                <div class="l-row"><span class="l-key">Le résultat</span><span class="l-val win">Le classeur numérique installé, le rituel calé dans l'agenda, et le Tableau des Victoires rempli avec les euros récupérés en 4 semaines.</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ CARNET ══ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">04 — Le carnet</span>
+      <h2>Les 12 phrases, écrites une fois pour toutes</h2>
+      <p>Le cœur de la formation tient dans un carnet A5 imprimé, une phrase par page, à poser à côté du téléphone. On copie, on remplace ce qui est entre crochets, on envoie. Voici 6 des 12 phrases.</p>
+    </div>
+
+    <div class="phrases">
+      <div class="phrase">
+        <span class="t">Phrase 1 · Traduire</span>
+        <q>Voici la photo d'un document que je ne comprends pas. Explique-le-moi en 10 lignes maximum, comme à un ami qui n'y connaît rien. Puis dis-moi en une seule phrase ce que je dois faire, et avant quelle date.</q>
+        <p class="use">Pour : mutuelle, impôts, banque, syndic, caisse de retraite, courrier officiel.</p>
+      </div>
+
+      <div class="phrase">
+        <span class="t">Phrase 2 · Repérer les pièges</span>
+        <q>Relis ce document et liste tout ce qui peut me coûter de l'argent : frais, pénalités, reconduction automatique, délais à ne pas dépasser. Classe du plus urgent au moins urgent.</q>
+        <p class="use">Pour : tout contrat en cours ou sur le point d'être signé.</p>
+      </div>
+
+      <div class="phrase">
+        <span class="t">Phrase 3 · Contester</span>
+        <q>Écris une lettre de réclamation polie mais ferme à [organisme]. Ma situation : [faits et dates]. Je veux obtenir [demande]. Reste factuel, une page maximum, et termine par une demande de réponse écrite sous 15 jours.</q>
+        <p class="use">Pour : frais bancaires, assurance, opérateur, commerçant, copropriété.</p>
+      </div>
+
+      <div class="phrase">
+        <span class="t">Phrase 5 · Comparer</span>
+        <q>Voici deux offres. Fais un tableau qui les compare ligne par ligne : prix par an, ce qui est couvert, ce qui ne l'est pas, durée d'engagement. Puis dis-moi ce que tu choisirais à ma place, et pourquoi.</q>
+        <p class="use">Pour : devis de travaux, mutuelles, assurances, forfaits, placements.</p>
+      </div>
+
+      <div class="phrase">
+        <span class="t">Phrase 7 · Vérifier</span>
+        <q>Sur quoi t'appuies-tu pour dire ça ? De quoi n'es-tu pas certain ? Qu'est-ce que je dois vérifier moi-même avant d'envoyer ?</q>
+        <p class="use">À utiliser systématiquement avant tout envoi. C'est la phrase la plus importante des douze.</p>
+      </div>
+
+      <div class="phrase">
+        <span class="t">Phrase 9 · Préparer un rendez-vous</span>
+        <q>J'ai rendez-vous avec [médecin / banquier / notaire / RH / conseiller retraite] au sujet de [situation]. Prépare-moi 8 questions précises à poser, et dis-moi quels documents apporter.</q>
+        <p class="use">Pour ne plus sortir d'un rendez-vous en se disant « j'aurais dû demander ».</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ KIT ══ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">05 — Le kit de réassurance</span>
+      <h2>Tout est prévu pour le moment où ça bloque</h2>
+      <p>Un débutant de 40+ n'abandonne pas parce que c'est difficile. Il abandonne parce qu'il est seul, à 21 h, devant un écran qui ne fait pas ce qu'il attendait. Sept dispositifs répondent à ce moment précis.</p>
+    </div>
+
+    <div class="kit">
+      <div class="kit-item">
+        <span class="fmt">Livret A5 · imprimé + PDF</span>
+        <h4>Le Carnet des 12 Phrases</h4>
+        <p>Une phrase par page, en gros caractères, avec les crochets à remplir. Se pose à côté du téléphone. Version papier envoyée par la poste : c'est l'objet qui rassure le plus.</p>
+      </div>
+      <div class="kit-item">
+        <span class="fmt">Fiche aimantée · A5</span>
+        <h4>La fiche 3P du frigo</h4>
+        <p>Photo → Phrase → Papier, en trois pictogrammes. Aimantée sur le réfrigérateur, elle rappelle la méthode sans rallumer l'ordinateur.</p>
+      </div>
+      <div class="kit-item">
+        <span class="fmt">Fiche PDF · A4</span>
+        <h4>La règle du marqueur noir</h4>
+        <p>Ce qu'on masque avant de photographier, ce qu'on laisse. Quatre lignes à cacher, jamais plus. Avec un exemple de facture avant / après.</p>
+      </div>
+      <div class="kit-item">
+        <span class="fmt">Fiche PDF · A4</span>
+        <h4>« L'assistant a-t-il raison ? »</h4>
+        <p>Les 5 contrôles avant d'envoyer quoi que ce soit : les chiffres, les dates, les noms d'organismes, les références de loi, les montants.</p>
+      </div>
+      <div class="kit-item">
+        <span class="fmt">Atelier live · 1 h par semaine</span>
+        <h4>« Apportez votre papier »</h4>
+        <p>Quatre rendez-vous en visio, un par semaine. Chacun montre son document, on le règle en direct. Rediffusion disponible si vous ne pouvez pas être là.</p>
+      </div>
+      <div class="kit-item">
+        <span class="fmt">Assistance · 30 jours</span>
+        <h4>SOS capture d'écran</h4>
+        <p>Bloqué ? Vous envoyez une photo de votre écran par message. Réponse sous 24 h ouvrées, en français simple, avec la marche à suivre. Aucune question n'est ridicule.</p>
+      </div>
+      <div class="kit-item">
+        <span class="fmt">Tableau imprimable + classeur</span>
+        <h4>Le Tableau des Victoires</h4>
+        <p>Une ligne par papier réglé, avec la colonne « euros récupérés » et « heures gagnées ». C'est ce tableau qui prouve, chiffres en main, que la formation s'est remboursée.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GARDE-FOUS ══ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">06 — Les garde-fous</span>
+      <h2>Deux limites annoncées dès la première leçon</h2>
+      <p>Sur des papiers administratifs, la prudence n'est pas un supplément : c'est la condition pour que la formation soit vendable et défendable.</p>
+    </div>
+
+    <div class="grid-2">
+      <div class="rail">
+        <h4>La limite des données</h4>
+        <p>On masque avant de photographier : numéro de sécurité sociale, IBAN et coordonnées bancaires, numéro fiscal, adresse complète. On garde le texte, les montants, les dates et les clauses — c'est tout ce dont l'assistant a besoin pour comprendre.</p>
+        <p><b>Une règle unique à retenir :</b> si vous ne le liriez pas à voix haute dans un train, il ne va pas dans l'assistant.</p>
+      </div>
+      <div class="rail">
+        <h4>La limite du conseil</h4>
+        <p>L'assistant prépare. Vous vérifiez. Vous signez. Pour ces situations, on prépare avec l'assistant <em>puis</em> on va voir un humain qualifié :</p>
+        <ul>
+          <li>Litige au-delà de 1 500 € ou mise en demeure</li>
+          <li>Succession, donation, indivision</li>
+          <li>Rupture de contrat de travail, licenciement</li>
+          <li>Question de santé : on prépare ses questions, on ne cherche jamais un diagnostic</li>
+          <li>Courrier d'huissier ou de commissaire de justice</li>
+        </ul>
+        <p>La leçon 4.2 fournit le carnet d'adresses des recours gratuits : France Services, points-justice, CCAS, ADIL, Défenseur des droits, Info Retraite.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRIX ══ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">07 — La monétisation</span>
+      <h2>Pourquoi 200 € passent sans friction</h2>
+      <p>Le prix ne se justifie pas par le nombre d'heures de vidéo — il s'écroulerait face à YouTube. Il se justifie par un montant récupéré, mesuré, inscrit noir sur blanc dans le Tableau des Victoires.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th scope="col">Ce qui est inclus</th><th scope="col">Valeur si vendu seul</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>12 leçons vidéo de 11 minutes, sous-titrées, en gros caractères</td><td>290 €</td></tr>
+          <tr><td>Le Carnet des 12 Phrases — version papier envoyée par la poste</td><td>60 €</td></tr>
+          <tr><td>4 ateliers live « Apportez votre papier » (1 h par semaine)</td><td>240 €</td></tr>
+          <tr><td>6 fiches mémo imprimables (3P, marqueur noir, contrôles, limites…)</td><td>40 €</td></tr>
+          <tr><td>Le classeur numérique prêt à l'emploi, déjà rangé</td><td>35 €</td></tr>
+          <tr><td>SOS capture d'écran pendant 30 jours</td><td>90 €</td></tr>
+          <tr><td>Le Tableau des Victoires + le carnet des recours gratuits</td><td>25 €</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td>Total</td><td><span class="strike">780 €</span> &nbsp; 200 €</td></tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="grid-2" style="margin-top:26px">
+      <div class="price-box">
+        <span class="eyebrow">L'offre</span>
+        <div class="price-line"><b>200 €</b><span>en une fois<br>ou 2 × 105 €</span></div>
+        <ul>
+          <li><b>Garantie « Premier papier réglé » — 14 jours.</b> Si à la fin de la semaine 1 vous n'avez pas réglé un vrai papier, vous êtes remboursé, sans discussion et sans justificatif.</li>
+          <li><b>Cohortes de 30 personnes.</b> Les ateliers live n'ont de sens qu'en petit groupe : c'est ce qui ferme les inscriptions, pas un compte à rebours artificiel.</li>
+          <li><b>Accès à vie</b> aux leçons et aux mises à jour du carnet.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="eyebrow eyebrow--ink">L'argumentaire, en une phrase</span>
+        <p style="margin-top:14px;font-size:19px;line-height:1.5">« Un seul courrier de contestation abouti, une seule mutuelle renégociée, une seule ligne corrigée sur votre relevé de carrière — et la formation est remboursée. Tout le reste, c'est du bénéfice, pendant vingt ans. »</p>
+        <p style="margin-top:18px;font-size:16.5px;color:var(--ink-soft);line-height:1.5">Ordres de grandeur constatés sur des dossiers de ce type, à présenter comme des exemples et jamais comme une promesse chiffrée : frais bancaires contestés, 90 à 240 € par an. Mutuelle renégociée, 200 à 600 € par an. Abonnement en reconduction tacite repéré à temps, 120 à 400 €. Deux heures de rédaction évitées par semaine. Une régularisation de trimestre, quelques centaines d'euros par an — à vie.</p>
+      </div>
+    </div>
+
+    <div class="rail" style="margin-top:26px">
+      <h4>Le vrai concurrent n'est pas YouTube</h4>
+      <p>YouTube montre l'outil ; il ne vous accompagne pas dans <em>votre</em> dossier retraite un jeudi soir. Le vrai concurrent, c'est le neveu qu'on n'ose pas déranger une troisième fois, et la pile de courriers qui reste sur le buffet. Ce que l'on vend ici, ce n'est pas de l'information : c'est la fin d'une charge mentale qui dure depuis des années.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ LANCEMENT ══ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">08 — Le lancement</span>
+      <h2>La séquence de vente, dans l'ordre</h2>
+      <p>La démonstration en direct fait tout le travail : on ne convainc pas un débutant avec des arguments, on le convainc en réglant son papier sous ses yeux.</p>
+    </div>
+
+    <div class="launch">
+      <div class="beat">
+        <span class="when">Étape 1</span>
+        <div>
+          <h4>L'aimant : « Les 3 premières phrases »</h4>
+          <p>PDF gratuit de 3 pages, extrait du carnet. Contre une adresse email. Il produit un premier résultat en 5 minutes — c'est lui qui crée la confiance, pas la promesse.</p>
+        </div>
+      </div>
+      <div class="beat">
+        <span class="when">Étape 2</span>
+        <div>
+          <h4>La masterclass gratuite : « Apportez un papier que vous ne comprenez pas »</h4>
+          <p>45 minutes en direct. On décode 4 documents envoyés par les participants, en partage d'écran. Le format est le produit : ils voient exactement ce qu'ils achètent.</p>
+        </div>
+      </div>
+      <div class="beat">
+        <span class="when">Étape 3</span>
+        <div>
+          <h4>La séquence email de 5 jours</h4>
+          <p>Un email = une histoire de papier réglé (banque, devis, retraite, parent âgé, contrat) + la phrase utilisée. Le cinquième email traite les deux objections réelles : « je suis nul en informatique » et « mes données ».</p>
+        </div>
+      </div>
+      <div class="beat">
+        <span class="when">Étape 4</span>
+        <div>
+          <h4>L'ouverture de la cohorte</h4>
+          <p>30 places, 200 € ou 2 × 105 €, fermeture à la date du premier atelier. Paiement en deux fois mis en avant aussi visiblement que le paiement comptant.</p>
+        </div>
+      </div>
+      <div class="beat">
+        <span class="when">Étape 5</span>
+        <div>
+          <h4>L'ascension, après la semaine 4</h4>
+          <p><b>Le Cercle</b> — 19 €/mois : deux nouvelles phrases par mois, un atelier mensuel, l'entraide entre membres. <b>Dossier Accompagné</b> — 149 € : une heure en tête-à-tête sur un dossier lourd (retraite, succession, litige). <b>Parrainage</b> : 30 € reversés pour chaque proche inscrit — le bouche-à-oreille est le canal naturel de cette audience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Papiers Réglés</b> — formation IA pour les 40 ans et plus, débutants complets.</p>
+    <p>Positionnement, curriculum, kit de réassurance et argumentaire tarifaire. Document de conception interne.</p>
+  </div>
+</footer>
+
+</main>
