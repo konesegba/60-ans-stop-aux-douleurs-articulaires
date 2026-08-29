@@ -69,7 +69,15 @@ preuve que tu sais construire une seconde audience à partir de zéro.
 **(Business-to-business, Europe)**
 
 **Ce que tu vends :** pas « du contenu TikTok » — ça, tout le monde le vend et le prix s'effondre.
-Tu vends **des patients** à des structures dont un seul patient vaut plusieurs centaines d'euros.
+Tu vends **un service de communication à prix fixe mensuel** à des structures dont un seul nouveau
+client vaut plusieurs centaines d'euros. La formule à employer en rendez-vous :
+« je vous rends visible auprès des gens qui cherchent déjà ce que vous proposez ».
+
+> ⚠️ **Ne dis jamais « je vous amène des patients » et ne facture jamais à la commission par patient.**
+> Le partage d'honoraires (la « dichotomie ») est interdit ou très encadré pour les professionnels de
+> santé en Belgique comme en France : un médecin qui l'accepterait s'expose à une sanction de son Ordre.
+> Ton unité de facturation est **toujours** un forfait mensuel de prestation de communication.
+> Le nombre de clients amenés est l'argument qui justifie ton prix, jamais la ligne sur la facture.
 
 **À qui exactement :** centres de perte de poids, cliniques de nutrition et d'obésité, médecins
 nutritionnistes en cabinet, centres de médecine métabolique, pharmacies avec service nutrition —
@@ -86,6 +94,55 @@ Lille ou Bruxelles ne peut dire cette phrase. Et c'est **exactement ton sujet** 
 
 **Le forfait :** 12 vidéos courtes/mois + une page de capture + une séquence de relance automatisée.
 **1 000 €/mois, engagement 3 mois. 4 clients = 4 000 €.**
+
+### Pourquoi le panier client décide de tout — la comparaison à retenir
+
+Le **panier client**, c'est ce qu'un nouveau client rapporte en moyenne à l'entreprise. C'est lui qui
+détermine ce qu'elle peut se permettre de dépenser pour en trouver un.
+
+| | Centre de perte de poids | Kiné indépendant |
+|---|---|---|
+| Prix payé par le client final | programme 3 mois à ~900 € | séance à ~25 €, ~9 séances |
+| **Ce que vaut un nouveau client** | **~900 €** | **~225 €** |
+| 3 nouveaux clients dans le mois lui rapportent | 2 700 € | 675 € |
+| Ton forfait de 1 000 € | **il lui reste 1 700 € — il renouvelle** | **il perd de l'argent — il refuse** |
+
+Même travail, même compétence, même audience. Dans un cas tu factures 1 000 €/mois pendant deux ans,
+dans l'autre on te dit non. **La différence n'est pas toi, c'est le panier client d'en face.**
+
+### Le déroulé concret d'un mois
+
+1. Tu produis **12 vidéos courtes** sur le sujet du client (surpoids, glycémie, alimentation).
+2. Elles sont publiées **sur les comptes du client**, à son nom.
+3. Chaque vidéo renvoie vers **une page simple** : « Faites le point sur votre profil métabolique —
+   2 minutes » → formulaire → nom, téléphone.
+4. **Le centre rappelle ces personnes lui-même** et vend son programme. Tu ne touches jamais au
+   patient et tu ne donnes aucun conseil de santé à sa place.
+5. Fin de mois : **rapport d'une page** — vues, clics, formulaires remplis.
+6. Le 1er du mois suivant, ta facture part.
+
+### Ce sur quoi tu t'engages, et ce que tu ne promets jamais
+
+| Tu t'engages (tu le contrôles) | Tu ne promets jamais (tu ne le contrôles pas) |
+|---|---|
+| 12 vidéos livrées dans le mois | « Je vous amène 5 patients » |
+| La page de contact en ligne et fonctionnelle | Le chiffre d'affaires du client |
+| Le rapport mensuel de résultats | Que le client rappelle bien ses contacts |
+
+Si le centre ne rappelle pas les gens qui ont laissé leur numéro, ce n'est pas ta faute — mais si tu
+as promis « 5 patients », c'est toi qui perds le contrat. **Promets ce que tu livres, montre ce que
+ça produit.** Note aussi que tu collectes des noms et des téléphones : mention RGPD obligatoire sur
+la page, le client est responsable de traitement et toi sous-traitant. Un contrat type suffit.
+
+### Vérifier cette fourchette de prix toi-même, en 30 minutes
+
+Appelle **3 centres de perte de poids** (Belgique ou Nord de la France) en te présentant comme un
+particulier qui se renseigne. Une seule question : « Combien coûte votre programme complet ? »
+- Réponse **au-dessus de 600 €** → la cible est bonne, 1 000 €/mois tient.
+- Réponse **en dessous de 300 €** → change de cible : cliniques capillaires, implantologie dentaire
+  ou médecine esthétique, où le panier client est de 1 500 à 4 000 €.
+
+C'est la toute première action à faire, avant d'écrire la moindre ligne de prospection.
 
 **Temps réel :** environ 3 h/semaine par client avec l'IA pour les scripts, le montage et le
 sous-titrage → 4 clients = 12 h/semaine = **1 h 45/jour**, plus 1 h/jour de prospection les
