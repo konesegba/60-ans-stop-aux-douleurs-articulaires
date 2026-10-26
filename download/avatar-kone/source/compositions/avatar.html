@@ -1,0 +1,69 @@
+<template>
+  <style>
+    #root{position:absolute;inset:0;pointer-events:none}
+    #av-x{position:absolute;left:236px;top:1076px;width:608px;height:861px}
+    #av-hop,#av-bob,#av-pop{position:relative;width:100%;height:100%;transform-origin:50% 100%}
+    .av-img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:50% 100%;opacity:0}
+    #av-base{opacity:1}
+  </style>
+  <div id="root" data-composition-id="avatar" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+    <div id="av-x"><div id="av-hop"><div id="av-bob"><div id="av-pop"><img id="av-base" class="av-img" src="assets/avatar_base.png" alt="avatar base"><img id="av-point" class="av-img" src="assets/avatar_point.png" alt="avatar point"><img id="av-think" class="av-img" src="assets/avatar_think.png" alt="avatar think"><img id="av-shock" class="av-img" src="assets/avatar_shock.png" alt="avatar shock"><img id="av-laptop" class="av-img" src="assets/avatar_laptop.png" alt="avatar laptop"><img id="av-wave" class="av-img" src="assets/avatar_wave.png" alt="avatar wave"></div></div></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#av-x", { y: 500 }, { y: 0, duration: 0.5, ease: "back.out(1.4)" }, 0);
+    tl.fromTo("#av-bob", { scaleY: 1, rotation: -1.2 }, { scaleY: 1.025, rotation: 1.2, duration: 0.9, yoyo: true, repeat: 125, ease: "sine.inOut" }, 0);
+tl.to("#av-x", { x: -230, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 3.3);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 3.3).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 3.52);
+tl.to("#av-x", { x: 0, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 5.75);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 5.75).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 5.97);
+tl.to("#av-x", { x: 240, scaleX: -1, duration: 0.5, ease: "power3.inOut" }, 11.5);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 11.5).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 11.72);
+tl.to("#av-x", { x: -240, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 15.7);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 15.7).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 15.92);
+tl.to("#av-x", { x: 240, scaleX: -1, duration: 0.5, ease: "power3.inOut" }, 34.9);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 34.9).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 35.12);
+tl.to("#av-x", { x: -240, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 51.7);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 51.7).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 51.92);
+tl.to("#av-x", { x: 0, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 73.6);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 73.6).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 73.82);
+tl.to("#av-x", { x: 0, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 101.3);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 101.3).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 101.52);
+tl.to("#av-hop", { y: -90, scale: 1.05, duration: 0.22, ease: "power2.out" }, 93.03).to("#av-hop", { y: 0, scale: 1, duration: 0.5, ease: "bounce.out" }, 93.25);
+tl.to("#av-hop", { y: -90, scale: 1.05, duration: 0.22, ease: "power2.out" }, 109.54).to("#av-hop", { y: 0, scale: 1, duration: 0.5, ease: "bounce.out" }, 109.76);
+tl.set("#av-base", { opacity: 0 }, 3.3); tl.set("#av-think", { opacity: 1 }, 3.3);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)" }, 3.3);
+tl.set("#av-think", { opacity: 0 }, 5.75); tl.set("#av-point", { opacity: 1 }, 5.75);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 5.75);
+tl.set("#av-point", { opacity: 0 }, 18.8); tl.set("#av-laptop", { opacity: 1 }, 18.8);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 18.8);
+tl.set("#av-laptop", { opacity: 0 }, 34.9); tl.set("#av-think", { opacity: 1 }, 34.9);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 34.9);
+tl.set("#av-think", { opacity: 0 }, 38.1); tl.set("#av-laptop", { opacity: 1 }, 38.1);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 38.1);
+tl.set("#av-laptop", { opacity: 0 }, 46.2); tl.set("#av-point", { opacity: 1 }, 46.2);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 46.2);
+tl.set("#av-point", { opacity: 0 }, 51.7); tl.set("#av-think", { opacity: 1 }, 51.7);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 51.7);
+tl.set("#av-think", { opacity: 0 }, 55.9); tl.set("#av-point", { opacity: 1 }, 55.9);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 55.9);
+tl.set("#av-point", { opacity: 0 }, 64.9); tl.set("#av-laptop", { opacity: 1 }, 64.9);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 64.9);
+tl.set("#av-laptop", { opacity: 0 }, 73.6); tl.set("#av-shock", { opacity: 1 }, 73.6);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 73.6);
+tl.set("#av-shock", { opacity: 0 }, 79.2); tl.set("#av-think", { opacity: 1 }, 79.2);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 79.2);
+tl.set("#av-think", { opacity: 0 }, 84.0); tl.set("#av-point", { opacity: 1 }, 84.0);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 84.0);
+tl.set("#av-point", { opacity: 0 }, 90.65); tl.set("#av-base", { opacity: 1 }, 90.65);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 90.65);
+tl.set("#av-base", { opacity: 0 }, 101.3); tl.set("#av-point", { opacity: 1 }, 101.3);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 101.3);
+tl.set("#av-point", { opacity: 0 }, 109.4); tl.set("#av-wave", { opacity: 1 }, 109.4);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 109.4);
+
+    tl.fromTo("#av-hop", { rotation: -5 }, { rotation: 5, duration: 0.09, yoyo: true, repeat: 7, ease: "sine.inOut" }, 73.7).to("#av-hop", { rotation: 0, duration: 0.1 }, 74.45);
+    tl.set({}, {}, 113.2);
+    window.__timelines["avatar"] = tl;
+  </script>
+</template>
