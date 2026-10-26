@@ -1,0 +1,81 @@
+<template>
+  <style>
+#root{position:absolute;inset:0;font-family:'Montserrat',sans-serif;color:#111;}
+.abs{position:absolute}
+.row{position:absolute;left:0;width:1080px;display:flex;justify-content:center}
+.lbl{display:inline-block;background:#E8532F;color:#fff;font-weight:900;text-transform:uppercase;font-size:50px;line-height:1.12;padding:14px 28px;border:5px solid #111;box-shadow:9px 9px 0 #111;white-space:nowrap;letter-spacing:.01em}
+.lbl.w{background:#fff;color:#111}
+.lbl.k{background:#111;color:#fff;box-shadow:9px 9px 0 #E8532F}
+.lbl.s{font-size:40px;padding:10px 22px}
+.lbl.xl{font-size:76px;padding:16px 34px}
+.box{background:#fff;border:5px solid #111;box-shadow:14px 14px 0 #111;border-radius:12px}
+.o{color:#E8532F}
+.ic{display:flex;align-items:center;justify-content:center}
+svg{flex:none}
+.badge{width:170px;height:190px;background:#E8532F;border:5px solid #111;box-shadow:10px 10px 0 #111;color:#fff;text-align:center;font-weight:900}
+.badge small{display:block;font-size:28px;margin-top:16px;letter-spacing:.06em}
+.badge b{display:block;font-size:120px;line-height:1}
+.win-h{height:78px;border-bottom:5px solid #111;display:flex;align-items:center;gap:12px;padding:0 26px;font-weight:900;font-size:32px}
+.win-h i{width:20px;height:20px;border-radius:50%;border:4px solid #111;display:inline-block}
+.win-h i:first-child{background:#E8532F}
+.win-h .st{margin-left:auto;background:#111;color:#fff;font-size:28px;padding:6px 14px;border-radius:6px;letter-spacing:.05em}
+.win-b{padding:30px 30px 10px}
+.bubble{margin-left:50px;background:#F1F1F1;border-radius:30px;padding:26px 32px;font-weight:600;font-size:34px;line-height:1.4}
+.bubble .tw{opacity:0}
+.bubble .tw.o{font-weight:800}
+.win-f{margin:20px 30px 30px;border:4px solid #111;border-radius:50px;height:96px;display:flex;align-items:center;padding:0 14px 0 22px;gap:16px;font-size:30px;font-weight:600;color:#888}
+.win-f .sp{margin-left:auto}
+.tile{display:flex;align-items:center;gap:22px;padding:22px 26px;font-weight:900;font-size:36px;text-transform:uppercase;line-height:1.15}
+</style>
+  <div id="root" data-composition-id="step2" data-width="1080" data-height="1920" data-layout-allow-overlap>
+
+<div id="s2-badge" class="badge abs" style="left:90px;top:360px"><small>NUMÉRO</small><b>2</b></div>
+<div id="s2-l1" class="lbl abs w" style="top:370px;left:300px">TROUVEZ</div>
+<div id="s2-l2" class="lbl abs " style="top:470px;left:300px">DES CLIENTS POTENTIELS</div>
+<div id="s2-win" class="box abs" style="left:70px;top:350px;width:940px">
+  <div class="win-h"><i></i><i></i><i></i>&nbsp;ChatGPT<span class="st">ÉTAPE 2</span></div>
+  <div class="win-b"><div class="bubble"><span class="tw s2-w">À </span><span class="tw s2-w">partir </span><span class="tw s2-w">de </span><span class="tw s2-w">mes </span><span class="tw o s2-w">compétences, </span><span class="tw s2-w">identifie </span><span class="tw o s2-w">trois </span><span class="tw o s2-w">catégories </span><span class="tw s2-w">de </span><span class="tw o s2-w">personnes </span><span class="tw s2-w">ou </span><span class="tw o s2-w">d’entreprises </span><span class="tw s2-w">qui </span><span class="tw s2-w">pourraient </span><span class="tw s2-w">avoir </span><span class="tw s2-w">besoin </span><span class="tw s2-w">de </span><span class="tw s2-w">mon </span><span class="tw o s2-w">aide. </span></div></div>
+  <div class="win-f"><svg width="52" height="52" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="8" width="84" height="84" rx="12"/><path d="M50 28v44M28 50h44"/></svg><span>Envoyer</span><span id="s2-dots" style="opacity:0;color:#111;font-weight:900">• • •</span><div id="s2-send" class="sp"><svg width="70" height="70" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="50" r="46" fill="#111" stroke="none"/><path d="M50 72V30M32 46l18-18 18 18" stroke="#fff" stroke-width="9"/></svg></div></div>
+</div>
+<div id="s2-k0" class="box abs" style="left:70px;top:350px;width:940px;height:200px;display:flex;align-items:center;gap:26px;padding:0 30px">
+  <svg width="120" height="120" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="36" cy="36" r="15" fill="#E8532F"/><circle cx="70" cy="40" r="12"/><path d="M8 88c0-18 12-28 28-28s28 10 28 28zM62 62c16 0 30 8 30 26H70"/></svg>
+  <div style="flex:1"><div style="font-weight:900;font-size:40px">PARTICULIERS</div>
+  <div id="s2-p0" style="font-size:30px;font-weight:700;margin-top:10px"><span class="o">PROBLÈME :</span> Manque de temps</div>
+  <div id="s2-s0" style="font-size:30px;font-weight:700;margin-top:4px"><span class="o">SERVICE :</span> Aide pratique</div></div></div><div id="s2-k1" class="box abs" style="left:70px;top:585px;width:940px;height:200px;display:flex;align-items:center;gap:26px;padding:0 30px">
+  <svg width="120" height="120" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><rect x="18" y="12" width="64" height="78" fill="#E8532F"/><path d="M32 28h10M58 28h10M32 46h10M58 46h10M32 64h10M58 64h10M44 90V76h12v14" stroke="#fff"/><rect x="18" y="12" width="64" height="78"/></svg>
+  <div style="flex:1"><div style="font-weight:900;font-size:40px">PETITES ENTREPRISES</div>
+  <div id="s2-p1" style="font-size:30px;font-weight:700;margin-top:10px"><span class="o">PROBLÈME :</span> Tâches à déléguer</div>
+  <div id="s2-s1" style="font-size:30px;font-weight:700;margin-top:4px"><span class="o">SERVICE :</span> Mission ponctuelle</div></div></div><div id="s2-k2" class="box abs" style="left:70px;top:820px;width:940px;height:200px;display:flex;align-items:center;gap:26px;padding:0 30px">
+  <svg width="120" height="120" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="32" r="18" fill="#E8532F"/><path d="M16 90c0-20 15-32 34-32s34 12 34 32z"/></svg>
+  <div style="flex:1"><div style="font-weight:900;font-size:40px">INDÉPENDANTS</div>
+  <div id="s2-p2" style="font-size:30px;font-weight:700;margin-top:10px"><span class="o">PROBLÈME :</span> Manque d’expertise</div>
+  <div id="s2-s2" style="font-size:30px;font-weight:700;margin-top:4px"><span class="o">SERVICE :</span> Conseil sur mesure</div></div></div>
+
+  </div>
+  <script>
+
+const tl = gsap.timeline({ paused: true });
+const pop = (s, t, d) => tl.fromTo(s, { opacity: 0, scale: 0.55, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: d || 0.38, ease: "back.out(2.2)" }, t);
+const slideL = (s, t) => tl.fromTo(s, { opacity: 0, x: -140 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, t);
+const slideR = (s, t) => tl.fromTo(s, { opacity: 0, x: 140 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, t);
+const rise = (s, t) => tl.fromTo(s, { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, t);
+const out = (s, t) => tl.to(s, { opacity: 0, scale: 0.85, duration: 0.25, ease: "power2.in" }, t);
+const typeAt = (sel, times) => { document.querySelectorAll(sel).forEach((el, i) => tl.set(el, { opacity: 1 }, times[i])); };
+const typeChars = (sel, t0, t1) => { const el = document.querySelector(sel); const full = el.dataset.full; const o = { n: 0 };
+  tl.fromTo(o, { n: 0 }, { n: full.length, duration: t1 - t0, ease: "none", onUpdate: () => { el.textContent = full.slice(0, Math.round(o.n)); } }, t0); };
+const wiggle = (s, t, n) => tl.fromTo(s, { rotation: -4 }, { rotation: 4, duration: 0.1, yoyo: true, repeat: n || 5, ease: "sine.inOut" }, t).to(s, { rotation: 0, duration: 0.1 }, ">");
+
+
+pop("#s2-badge", 0.05); slideR("#s2-l1", 1.0500000000000043); slideR("#s2-l2", 1.730000000000004);
+out("#s2-badge", 2.890000000000005); out("#s2-l1", 2.890000000000005); out("#s2-l2", 2.890000000000005);
+rise("#s2-win", 3.190000000000005);
+typeAt(".s2-w", [4.44, 4.64, 4.99, 5.12, 5.31, 6.18, 6.72, 7.02, 7.67, 7.77, 8.36, 8.41, 9.12, 9.41, 9.83, 10.11, 10.44, 10.6, 10.71]);
+out("#s2-win", 10.920000000000003);
+slideL("#s2-k0", 11.270000000000003); slideL("#s2-k1", 11.43); slideL("#s2-k2", 11.969999999999999);
+pop("#s2-p0", 12.66); pop("#s2-s0", 14.54);pop("#s2-p1", 12.91); pop("#s2-s1", 14.79);pop("#s2-p2", 13.16); pop("#s2-s2", 15.04);
+out("#s2-k0", 16.5); out("#s2-k1", 16.5); out("#s2-k2", 16.5);
+
+    tl.set({}, {}, 16.8);
+    window.__timelines["step2"] = tl;
+  </script>
+</template>

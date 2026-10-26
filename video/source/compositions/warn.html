@@ -1,0 +1,72 @@
+<template>
+  <style>
+#root{position:absolute;inset:0;font-family:'Montserrat',sans-serif;color:#111;}
+.abs{position:absolute}
+.row{position:absolute;left:0;width:1080px;display:flex;justify-content:center}
+.lbl{display:inline-block;background:#E8532F;color:#fff;font-weight:900;text-transform:uppercase;font-size:50px;line-height:1.12;padding:14px 28px;border:5px solid #111;box-shadow:9px 9px 0 #111;white-space:nowrap;letter-spacing:.01em}
+.lbl.w{background:#fff;color:#111}
+.lbl.k{background:#111;color:#fff;box-shadow:9px 9px 0 #E8532F}
+.lbl.s{font-size:40px;padding:10px 22px}
+.lbl.xl{font-size:76px;padding:16px 34px}
+.box{background:#fff;border:5px solid #111;box-shadow:14px 14px 0 #111;border-radius:12px}
+.o{color:#E8532F}
+.ic{display:flex;align-items:center;justify-content:center}
+svg{flex:none}
+.badge{width:170px;height:190px;background:#E8532F;border:5px solid #111;box-shadow:10px 10px 0 #111;color:#fff;text-align:center;font-weight:900}
+.badge small{display:block;font-size:28px;margin-top:16px;letter-spacing:.06em}
+.badge b{display:block;font-size:120px;line-height:1}
+.win-h{height:78px;border-bottom:5px solid #111;display:flex;align-items:center;gap:12px;padding:0 26px;font-weight:900;font-size:32px}
+.win-h i{width:20px;height:20px;border-radius:50%;border:4px solid #111;display:inline-block}
+.win-h i:first-child{background:#E8532F}
+.win-h .st{margin-left:auto;background:#111;color:#fff;font-size:28px;padding:6px 14px;border-radius:6px;letter-spacing:.05em}
+.win-b{padding:30px 30px 10px}
+.bubble{margin-left:50px;background:#F1F1F1;border-radius:30px;padding:26px 32px;font-weight:600;font-size:34px;line-height:1.4}
+.bubble .tw{opacity:0}
+.bubble .tw.o{font-weight:800}
+.win-f{margin:20px 30px 30px;border:4px solid #111;border-radius:50px;height:96px;display:flex;align-items:center;padding:0 14px 0 22px;gap:16px;font-size:30px;font-weight:600;color:#888}
+.win-f .sp{margin-left:auto}
+.tile{display:flex;align-items:center;gap:22px;padding:22px 26px;font-weight:900;font-size:36px;text-transform:uppercase;line-height:1.15}
+</style>
+  <div id="root" data-composition-id="warn" data-width="1080" data-height="1920" data-layout-allow-overlap>
+
+<div class="row" style="top:350px"><div id="w-att" class="lbl xl" style="display:flex;align-items:center;gap:22px"><svg width="90" height="90" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><path d="M50 8l44 80H6z" fill="#E8532F"/><path d="M50 36v24M50 74v1" stroke="#fff" stroke-width="9"/><path d="M50 8l44 80H6z"/></svg>ATTENTION</div></div>
+<div id="w-b1" class="box abs" style="left:70px;top:560px;width:380px;height:330px;text-align:center;padding-top:30px"><svg width="140" height="140" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><path d="M50 8c-20 0-32 15-32 31 0 12 7 19 12 25 3 4 4 8 4 12h32c0-4 1-8 4-12 5-6 12-13 12-25 0-16-12-31-32-31z" fill="#E8532F"/><path d="M36 86h28M40 96h20"/></svg><div style="font-weight:900;font-size:38px;margin-top:16px;line-height:1.1">IDÉE<br>DE L'IA</div></div>
+<div id="w-ne" class="abs" style="left:478px;top:620px;font-weight:900;font-size:170px;line-height:1;color:#E8532F;-webkit-text-stroke:5px #111">≠</div>
+<div id="w-b2" class="box abs" style="left:630px;top:560px;width:380px;height:330px;text-align:center;padding-top:30px"><svg width="140" height="140" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><path d="M10 90h80M10 90V10"/><path d="M20 72l20-20 16 12 30-34" stroke="#E8532F" stroke-width="9"/><path d="M70 30h16v16"/></svg><div style="font-weight:900;font-size:38px;margin-top:16px;line-height:1.1">BONNE<br>OPPORTUNITÉ</div></div>
+<div class="row" style="top:350px"><div id="w-av" class="lbl w">AVANT D'INVESTIR</div></div>
+<div id="w-i1" class="box abs" style="left:150px;top:500px;width:360px;height:280px;text-align:center;padding-top:30px"><svg width="130" height="130" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><path d="M22 8h56M22 92h56M28 8c0 26 44 26 44 42s-44 16-44 42M72 8c0 26-44 26-44 42s44 16 44 42"/><path d="M36 84c4-10 24-10 28 0z" fill="#E8532F"/></svg><div style="font-weight:900;font-size:40px;margin-top:12px">TEMPS</div></div>
+<div id="w-i2" class="box abs" style="left:570px;top:500px;width:360px;height:280px;text-align:center;padding-top:30px"><svg width="130" height="130" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="50" r="40" fill="#E8532F"/><path d="M62 34a18 18 0 1 0 0 32M30 45h26M30 56h26" stroke="#fff"/></svg><div style="font-weight:900;font-size:40px;margin-top:12px">ARGENT</div></div>
+<div class="row" style="top:860px"><div id="w-ver" class="lbl ">VÉRIFIEZ LA DEMANDE</div></div>
+<div id="w-list" class="box abs" style="left:70px;top:360px;width:940px;padding:20px 40px">
+  <div style="font-weight:900;font-size:30px;letter-spacing:.06em;color:#E8532F">✔ CHECK-LIST AVANT DE VOUS LANCER</div><div id="w-r0" style="display:flex;align-items:center;gap:24px;margin:26px 0;font-weight:900;font-size:36px"><div style="position:relative;width:76px;height:76px;border:5px solid #111;border-radius:12px;flex:none"><div id="w-c0" class="abs" style="left:-6px;top:-6px"><svg width="78" height="78" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="50" r="42" fill="#E8532F"/><path d="M30 52l14 14 28-30" stroke="#fff" stroke-width="10"/></svg></div></div>DISCUTEZ AVEC DES CLIENTS</div><div id="w-r1" style="display:flex;align-items:center;gap:24px;margin:26px 0;font-weight:900;font-size:36px"><div style="position:relative;width:76px;height:76px;border:5px solid #111;border-radius:12px;flex:none"><div id="w-c1" class="abs" style="left:-6px;top:-6px"><svg width="78" height="78" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="50" r="42" fill="#E8532F"/><path d="M30 52l14 14 28-30" stroke="#fff" stroke-width="10"/></svg></div></div>IDENTIFIEZ LEURS BESOINS</div><div id="w-r2" style="display:flex;align-items:center;gap:24px;margin:26px 0;font-weight:900;font-size:36px"><div style="position:relative;width:76px;height:76px;border:5px solid #111;border-radius:12px;flex:none"><div id="w-c2" class="abs" style="left:-6px;top:-6px"><svg width="78" height="78" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="50" r="42" fill="#E8532F"/><path d="M30 52l14 14 28-30" stroke="#fff" stroke-width="10"/></svg></div></div>SONT-ILS PRÊTS À PAYER ?</div></div>
+
+  </div>
+  <script>
+
+const tl = gsap.timeline({ paused: true });
+const pop = (s, t, d) => tl.fromTo(s, { opacity: 0, scale: 0.55, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: d || 0.38, ease: "back.out(2.2)" }, t);
+const slideL = (s, t) => tl.fromTo(s, { opacity: 0, x: -140 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, t);
+const slideR = (s, t) => tl.fromTo(s, { opacity: 0, x: 140 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, t);
+const rise = (s, t) => tl.fromTo(s, { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, t);
+const out = (s, t) => tl.to(s, { opacity: 0, scale: 0.85, duration: 0.25, ease: "power2.in" }, t);
+const typeAt = (sel, times) => { document.querySelectorAll(sel).forEach((el, i) => tl.set(el, { opacity: 1 }, times[i])); };
+const typeChars = (sel, t0, t1) => { const el = document.querySelector(sel); const full = el.dataset.full; const o = { n: 0 };
+  tl.fromTo(o, { n: 0 }, { n: full.length, duration: t1 - t0, ease: "none", onUpdate: () => { el.textContent = full.slice(0, Math.round(o.n)); } }, t0); };
+const wiggle = (s, t, n) => tl.fromTo(s, { rotation: -4 }, { rotation: 4, duration: 0.1, yoyo: true, repeat: n || 5, ease: "sine.inOut" }, t).to(s, { rotation: 0, duration: 0.1 }, ">");
+
+
+pop("#w-att", 0.05); wiggle("#w-att svg", 0.4, 7);
+slideL("#w-b1", 1.1300000000000097); pop("#w-ne", 2.450000000000003); slideR("#w-b2", 3.8700000000000045);
+tl.fromTo("#w-ne", { rotation: -20 }, { rotation: 0, duration: 0.4, ease: "back.out(3)" }, 2.450000000000003);
+out("#w-att", 5.360000000000011); out("#w-b1", 5.360000000000011); out("#w-ne", 5.360000000000011); out("#w-b2", 5.360000000000011);
+pop("#w-av", 5.660000000000011); pop("#w-i1", 6.670000000000002); pop("#w-i2", 7.170000000000002);
+pop("#w-ver", 7.800000000000011); wiggle("#w-ver", 9.200000000000003, 3);
+out("#w-av", 10.050000000000006); out("#w-i1", 10.050000000000006); out("#w-i2", 10.050000000000006); out("#w-ver", 10.050000000000006);
+rise("#w-list", 10.300000000000006);
+slideL("#w-r0", 10.4); pop("#w-c0", 11.64);slideL("#w-r1", 12.4); pop("#w-c1", 13.45);slideL("#w-r2", 14.05); pop("#w-c2", 15.39);
+out("#w-list", 16.75);
+
+    tl.set({}, {}, 17.05);
+    window.__timelines["warn"] = tl;
+  </script>
+</template>
