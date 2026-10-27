@@ -1,6 +1,6 @@
 # Créer de nouvelles poses de l'avatar (FLORA)
 
-Les 6 poses actuelles sont dans `assets/poses/` (prêtes) et `assets/poses-originales/` (fond gris, 1024×1024).
+Les 17 poses actuelles (voir `poses-catalogue.md`) sont dans `assets/poses/` (prêtes) et `assets/poses-originales/` (fond gris, 1024×1024).
 Pour une nouvelle pose ou un autre avatar :
 
 ## 1. Envoyer l'image de départ sur FLORA
