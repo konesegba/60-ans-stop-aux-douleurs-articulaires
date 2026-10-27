@@ -383,10 +383,11 @@ for t, x, sx in moves:
     mjs += f'tl.to("#av-hop", {{ y: -70, duration: 0.22, ease: "power2.out" }}, {t}).to("#av-hop", {{ y: 0, duration: 0.45, ease: "bounce.out" }}, {t+0.22});\n'
 for t in [T(245)-0.3, T(288)]:
     mjs += f'tl.to("#av-hop", {{ y: -90, scale: 1.05, duration: 0.22, ease: "power2.out" }}, {t}).to("#av-hop", {{ y: 0, scale: 1, duration: 0.5, ease: "bounce.out" }}, {t+0.22});\n'
-POSES = ["base", "point", "think", "shock", "laptop", "wave"]
-imgs = "".join(f'<img id="av-{n}" class="av-img" src="assets/avatar_{n}.png" alt="avatar {n}">' for n in POSES)
+# Poses disponibles : voir references/poses-catalogue.md (17 poses). Seules celles de `sched` sont chargées.
 sched = [(3.3, "think"), (5.75, "point"), (18.8, "laptop"), (34.9, "think"), (38.1, "laptop"), (46.2, "point"), (51.7, "think"),
          (55.9, "point"), (64.9, "laptop"), (73.6, "shock"), (79.2, "think"), (84.0, "point"), (90.65, "base"), (101.3, "point"), (109.4, "wave")]
+POSES = ["base"] + sorted({n for _, n in sched} - {"base"})
+imgs = "".join(f'<img id="av-{n}" class="av-img" src="assets/avatar_{n}.png" alt="avatar {n}">' for n in POSES)
 cur = "base"
 for t, n in sched:
     mjs += f'tl.set("#av-{cur}", {{ opacity: 0 }}, {t}); tl.set("#av-{n}", {{ opacity: 1 }}, {t});\n'
@@ -395,7 +396,7 @@ for t, n in sched:
 avatar = f"""<template>
   <style>
     #root{{position:absolute;inset:0;pointer-events:none}}
-    #av-x{{position:absolute;left:236px;top:1076px;width:608px;height:861px}}
+    #av-x{{position:absolute;left:241px;top:1058px;width:598px;height:880px}}
     #av-hop,#av-bob,#av-pop{{position:relative;width:100%;height:100%;transform-origin:50% 100%}}
     .av-img{{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:50% 100%;opacity:0}}
     #av-base{{opacity:1}}

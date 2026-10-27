@@ -1,34 +1,48 @@
-# Aligne plusieurs poses détourées (pieds au même niveau), ajoute le contour blanc et les recadre dans un cadre commun.
-# Usage : python3 prepare_poses.py <dossier_avec_cut_*.png> <dossier_sortie>
-# Attend cut_base.png, cut_point.png, cut_think.png, cut_shock.png, cut_laptop.png, cut_wave.png (sortie de remove-background).
-import sys
+# Met plusieurs poses détourées à la même échelle (même hauteur de personnage), aligne les pieds,
+# ajoute le contour blanc "sticker" et les recadre toutes dans un cadre commun : elles se remplacent sans saut.
+# Usage : python3 prepare_poses.py <dossier_cut> <dossier_sortie> [ref=base] [noms...]
+#   <dossier_cut> contient cut_<nom>.png (sortie de `npx hyperframes remove-background`).
+#   Sans noms : toutes les cut_*.png du dossier. Sortie : avatar_<nom>.png
+#   Les noms suffixés par ":h=0.9" gardent une hauteur relative (ex. bureau_ordinateur:h=0.9).
+import glob, os, sys
 from PIL import Image, ImageFilter
-names = ['base','point','think','shock','laptop','wave']
+
 src, out = sys.argv[1], sys.argv[2]
-ims = {}
+ref = sys.argv[3] if len(sys.argv) > 3 else "base"
+args = sys.argv[4:] or sorted(os.path.basename(p)[4:-4] for p in glob.glob(f"{src}/cut_*.png"))
+rel = {}
+names = []
+for a in args:
+    n, _, opt = a.partition(":h=")
+    names.append(n)
+    rel[n] = float(opt) if opt else 1.0
+
+def load(n):
+    im = Image.open(f"{src}/cut_{n}.png").convert("RGBA")
+    bb = im.split()[3].point(lambda v: 255 if v > 100 else 0).getbbox()
+    return im.crop(bb)
+
+target_h = load(ref).size[1]
+W, H, pad = 1100, int(target_h * 1.25) + 80, 40
+frames = []
 for n in names:
-    im = Image.open(f'{src}/cut_{n}.png').convert('RGBA')
-    a = im.split()[3].point(lambda v: 255 if v > 100 else 0)
-    bb = a.getbbox()
-    ims[n] = (im, bb)
-base_bottom = ims['base'][1][3]
-pad = 40
-canvas = []
-for n in names:
-    im, bb = ims[n]
-    dy = base_bottom - bb[3]          # align feet on the base pose
-    c = Image.new('RGBA', (1024 + 2*pad, 1024 + 2*pad), (0,0,0,0))
-    c.paste(im, (pad, pad + dy), im)
+    im = load(n)
+    s = target_h * rel[n] / im.size[1]
+    im = im.resize((max(1, round(im.size[0] * s)), round(im.size[1] * s)), Image.LANCZOS)
+    c = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    c.paste(im, ((W - im.size[0]) // 2, H - pad - im.size[1]), im)  # centré, pieds sur la même ligne
     a = c.split()[3].point(lambda v: 255 if v > 100 else 0)
     ol = a.filter(ImageFilter.MaxFilter(25)).filter(ImageFilter.GaussianBlur(1.2))
-    w = Image.new('RGBA', c.size, (255,255,255,255)); w.putalpha(ol)
-    sh = Image.new('RGBA', c.size, (0,0,0,255)); sh.putalpha(ol.filter(ImageFilter.GaussianBlur(10)).point(lambda v: int(v*.25)))
-    o = Image.new('RGBA', c.size, (0,0,0,0)); o.alpha_composite(sh); o.alpha_composite(w); o.alpha_composite(c)
-    canvas.append((n, o))
+    wht = Image.new("RGBA", c.size, (255, 255, 255, 255)); wht.putalpha(ol)
+    sh = Image.new("RGBA", c.size, (0, 0, 0, 255)); sh.putalpha(ol.filter(ImageFilter.GaussianBlur(10)).point(lambda v: int(v * .25)))
+    o = Image.new("RGBA", c.size, (0, 0, 0, 0)); o.alpha_composite(sh); o.alpha_composite(wht); o.alpha_composite(c)
+    frames.append((n, o))
+
 box = None
-for n, o in canvas:
+for _, o in frames:
     b = o.getbbox()
-    box = b if box is None else (min(box[0],b[0]), min(box[1],b[1]), max(box[2],b[2]), max(box[3],b[3]))
-for n, o in canvas:
-    o.crop(box).save(f'{out}/avatar_{n}.png')
-print(box, box[2]-box[0], box[3]-box[1])
+    box = b if box is None else (min(box[0], b[0]), min(box[1], b[1]), max(box[2], b[2]), max(box[3], b[3]))
+os.makedirs(out, exist_ok=True)
+for n, o in frames:
+    o.crop(box).save(f"{out}/avatar_{n}.png")
+print(f"{len(frames)} poses -> {out}  cadre commun {box[2]-box[0]}x{box[3]-box[1]} (rapport {round((box[2]-box[0])/(box[3]-box[1]),3)})")
