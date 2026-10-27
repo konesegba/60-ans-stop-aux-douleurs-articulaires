@@ -1,0 +1,77 @@
+<template>
+  <style>
+    #root{position:absolute;inset:0;pointer-events:none}
+    #av-x{position:absolute;left:241px;top:1058px;width:598px;height:880px}
+    #av-hop,#av-bob,#av-pop{position:relative;width:100%;height:100%;transform-origin:50% 100%}
+    .av-img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:contain;object-position:50% 100%;opacity:0}
+  </style>
+  <div id="root" data-composition-id="avatar" data-width="1080" data-height="1920" data-layout-allow-overflow data-layout-allow-overlap>
+    <div id="av-x"><div id="av-hop"><div id="av-bob"><div id="av-pop"><img id="av-wave" class="av-img" src="assets/avatar_wave.png" alt="avatar wave" style="opacity:1"><img id="av-base" class="av-img" src="assets/avatar_base.png" alt="avatar base"><img id="av-bureau_ordinateur" class="av-img" src="assets/avatar_bureau_ordinateur.png" alt="avatar bureau_ordinateur"><img id="av-enjoue" class="av-img" src="assets/avatar_enjoue.png" alt="avatar enjoue"><img id="av-face_pouce" class="av-img" src="assets/avatar_face_pouce.png" alt="avatar face_pouce"><img id="av-laptop" class="av-img" src="assets/avatar_laptop.png" alt="avatar laptop"><img id="av-ordinateur_main" class="av-img" src="assets/avatar_ordinateur_main.png" alt="avatar ordinateur_main"><img id="av-pensif" class="av-img" src="assets/avatar_pensif.png" alt="avatar pensif"><img id="av-pensif_souriant" class="av-img" src="assets/avatar_pensif_souriant.png" alt="avatar pensif_souriant"><img id="av-point" class="av-img" src="assets/avatar_point.png" alt="avatar point"><img id="av-think" class="av-img" src="assets/avatar_think.png" alt="avatar think"><img id="av-trois_quarts" class="av-img" src="assets/avatar_trois_quarts.png" alt="avatar trois_quarts"></div></div></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#av-x", { y: 500 }, { y: 0, duration: 0.5, ease: "back.out(1.4)" }, 0);
+    tl.fromTo("#av-bob", { scaleY: 1, rotation: -1.2 }, { scaleY: 1.025, rotation: 1.2, duration: 0.9, yoyo: true, repeat: 73, ease: "sine.inOut" }, 0);
+tl.to("#av-x", { x: -230, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 10.44);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 10.44).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 10.66);
+tl.to("#av-x", { x: 230, scaleX: -1, duration: 0.5, ease: "power3.inOut" }, 17.48);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 17.48).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 17.7);
+tl.to("#av-x", { x: -230, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 24.75);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 24.75).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 24.97);
+tl.to("#av-x", { x: 230, scaleX: -1, duration: 0.5, ease: "power3.inOut" }, 30.8);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 30.8).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 31.02);
+tl.to("#av-x", { x: 0, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 37.42);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 37.42).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 37.64);
+tl.to("#av-x", { x: -230, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 47.2);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 47.2).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 47.42);
+tl.to("#av-x", { x: 0, scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 54.92);
+tl.to("#av-hop", { y: -70, duration: 0.22, ease: "power2.out" }, 54.92).to("#av-hop", { y: 0, duration: 0.45, ease: "bounce.out" }, 55.14);
+tl.set("#av-wave", { opacity: 0 }, 0.98); tl.set("#av-point", { opacity: 1 }, 0.98);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)" }, 0.98);
+tl.set("#av-point", { opacity: 0 }, 3.67); tl.set("#av-face_pouce", { opacity: 1 }, 3.67);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 3.67);
+tl.set("#av-face_pouce", { opacity: 0 }, 6.49); tl.set("#av-think", { opacity: 1 }, 6.49);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 6.49);
+tl.set("#av-think", { opacity: 0 }, 9.08); tl.set("#av-enjoue", { opacity: 1 }, 9.08);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 9.08);
+tl.set("#av-enjoue", { opacity: 0 }, 10.54); tl.set("#av-point", { opacity: 1 }, 10.54);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 10.54);
+tl.set("#av-point", { opacity: 0 }, 12.92); tl.set("#av-ordinateur_main", { opacity: 1 }, 12.92);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 12.92);
+tl.set("#av-ordinateur_main", { opacity: 0 }, 17.05); tl.set("#av-pensif_souriant", { opacity: 1 }, 17.05);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 17.05);
+tl.set("#av-pensif_souriant", { opacity: 0 }, 17.580000000000002); tl.set("#av-think", { opacity: 1 }, 17.580000000000002);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 17.580000000000002);
+tl.set("#av-think", { opacity: 0 }, 22.09); tl.set("#av-pensif", { opacity: 1 }, 22.09);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 22.09);
+tl.set("#av-pensif", { opacity: 0 }, 23.2); tl.set("#av-base", { opacity: 1 }, 23.2);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 23.2);
+tl.set("#av-base", { opacity: 0 }, 24.85); tl.set("#av-laptop", { opacity: 1 }, 24.85);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 24.85);
+tl.set("#av-laptop", { opacity: 0 }, 30.13); tl.set("#av-point", { opacity: 1 }, 30.13);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 30.13);
+tl.set("#av-point", { opacity: 0 }, 30.900000000000002); tl.set("#av-bureau_ordinateur", { opacity: 1 }, 30.900000000000002);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 30.900000000000002);
+tl.set("#av-bureau_ordinateur", { opacity: 0 }, 37.52); tl.set("#av-enjoue", { opacity: 1 }, 37.52);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 37.52);
+tl.set("#av-enjoue", { opacity: 0 }, 39.37); tl.set("#av-point", { opacity: 1 }, 39.37);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 39.37);
+tl.set("#av-point", { opacity: 0 }, 44.56); tl.set("#av-trois_quarts", { opacity: 1 }, 44.56);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 44.56);
+tl.set("#av-trois_quarts", { opacity: 0 }, 47.300000000000004); tl.set("#av-pensif_souriant", { opacity: 1 }, 47.300000000000004);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 47.300000000000004);
+tl.set("#av-pensif_souriant", { opacity: 0 }, 49.85); tl.set("#av-point", { opacity: 1 }, 49.85);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 49.85);
+tl.set("#av-point", { opacity: 0 }, 53.77); tl.set("#av-face_pouce", { opacity: 1 }, 53.77);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 53.77);
+tl.set("#av-face_pouce", { opacity: 0 }, 55.02); tl.set("#av-think", { opacity: 1 }, 55.02);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 55.02);
+tl.set("#av-think", { opacity: 0 }, 58.76); tl.set("#av-laptop", { opacity: 1 }, 58.76);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 58.76);
+tl.set("#av-laptop", { opacity: 0 }, 61.25); tl.set("#av-wave", { opacity: 1 }, 61.25);
+tl.fromTo("#av-pop", { scaleX: 1.08, scaleY: 0.9 }, { scaleX: 1, scaleY: 1, duration: 0.35, ease: "back.out(3)", immediateRender: false }, 61.25);
+
+    tl.set({}, {}, 66.2);
+    window.__timelines["avatar"] = tl;
+  </script>
+</template>

@@ -1,0 +1,74 @@
+<template>
+  <style>
+#root{position:absolute;inset:0;font-family:'Montserrat',sans-serif;color:#111;}
+.abs{position:absolute}
+.row{position:absolute;left:0;width:1080px;display:flex;justify-content:center}
+.lbl{display:inline-block;background:#E8532F;color:#fff;font-weight:900;text-transform:uppercase;font-size:50px;line-height:1.12;padding:14px 28px;border:5px solid #111;box-shadow:9px 9px 0 #111;white-space:nowrap;letter-spacing:.01em}
+.lbl.w{background:#fff;color:#111}
+.lbl.k{background:#111;color:#fff;box-shadow:9px 9px 0 #E8532F}
+.lbl.s{font-size:40px;padding:10px 22px}
+.lbl.xl{font-size:76px;padding:16px 34px}
+.box{background:#fff;border:5px solid #111;box-shadow:14px 14px 0 #111;border-radius:12px}
+.o{color:#E8532F}
+.ic{display:flex;align-items:center;justify-content:center}
+svg{flex:none}
+.badge{width:170px;height:190px;background:#E8532F;border:5px solid #111;box-shadow:10px 10px 0 #111;color:#fff;text-align:center;font-weight:900}
+.badge small{display:block;font-size:28px;margin-top:16px;letter-spacing:.06em}
+.badge b{display:block;font-size:120px;line-height:1}
+.win-h{height:78px;border-bottom:5px solid #111;display:flex;align-items:center;gap:12px;padding:0 26px;font-weight:900;font-size:32px}
+.win-h i{width:20px;height:20px;border-radius:50%;border:4px solid #111;display:inline-block}
+.win-h i:first-child{background:#E8532F}
+.win-h .st{margin-left:auto;background:#111;color:#fff;font-size:28px;padding:6px 14px;border-radius:6px;letter-spacing:.05em}
+.win-b{padding:30px 30px 10px}
+.bubble{margin-left:50px;background:#F1F1F1;border-radius:30px;padding:26px 32px;font-weight:600;font-size:34px;line-height:1.4}
+.bubble .tw{opacity:0}
+.bubble .tw.o{font-weight:800}
+.win-f{margin:20px 30px 30px;border:4px solid #111;border-radius:50px;height:96px;display:flex;align-items:center;padding:0 14px 0 22px;gap:16px;font-size:30px;font-weight:600;color:#888}
+.win-f .sp{margin-left:auto}
+.tile{display:flex;align-items:center;gap:22px;padding:22px 26px;font-weight:900;font-size:36px;text-transform:uppercase;line-height:1.15}
+
+.bar{height:110px;display:flex;align-items:center;gap:16px;padding:0 14px 0 18px;box-shadow:10px 10px 0 #111}
+.bar .typed{color:#E8532F;font-weight:800;font-size:31px;flex:1;white-space:nowrap;overflow:hidden}
+.card-t{font-weight:900;font-size:34px;text-transform:uppercase}
+.gpt{display:flex;align-items:center;gap:12px;font-weight:900;font-size:28px;margin-bottom:16px}
+.gpt i{width:40px;height:40px;border-radius:50%;background:#111;display:inline-block}
+</style>
+  <div id="root" data-composition-id="n1" data-width="1080" data-height="1920" data-layout-allow-overlap>
+
+<div id="a-badge" class="badge abs" style="left:70px;top:330px"><small>NUMÉRO</small><b>1</b></div>
+<div class="abs" style="left:280px;top:340px;width:730px"><div style="font-weight:900;font-size:28px;margin:0 0 6px 6px">ChatGPT</div>
+<div id="a-bar" class="box bar"><svg width="48" height="48" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="8" width="84" height="84" rx="12"/><path d="M50 28v44M28 50h44"/></svg><span id="a-typed" class="typed" data-full="Développe et ajoute des détails"></span><svg width="70" height="70" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="50" r="46" fill="#111" stroke="none"/><path d="M50 72V30M32 46l18-18 18 18" stroke="#fff" stroke-width="9"/></svg></div></div>
+<div id="a-card" class="box abs" style="left:70px;top:560px;width:940px;height:470px;padding:26px 30px">
+  <div class="gpt"><i></i>Réponse de ChatGPT</div>
+  <div id="a-short" class="abs" style="left:30px;top:96px;font-size:36px;font-weight:700;background:#F1F1F1;border-radius:24px;padding:18px 26px">Publie sur LinkedIn.</div>
+  <div id="a-long" class="abs" style="left:30px;top:96px;width:870px;font-size:30px;font-weight:600;line-height:1.38;background:#F1F1F1;border-radius:24px;padding:20px 26px">Publie <b class="o">3 fois par semaine</b> sur LinkedIn : raconte le problème d'un client, ta solution et le résultat obtenu. Commente aussi les posts de tes futurs clients pour te faire remarquer.</div>
+  <div id="a-e1" class="abs" style="left:30px;top:330px;font-size:28px;font-weight:700"><span class="lbl s" style="font-size:28px;padding:6px 12px;box-shadow:5px 5px 0 #111">EXEMPLE</span>&nbsp; Coach : l'avant / après d'un client</div>
+  <div id="a-e2" class="abs" style="left:30px;top:395px;font-size:28px;font-weight:700"><span class="lbl s" style="font-size:28px;padding:6px 12px;box-shadow:5px 5px 0 #111">EXEMPLE</span>&nbsp; Comptable : 3 erreurs fréquentes</div>
+</div>
+<div id="a-chip" class="lbl w s abs" style="left:600px;top:1150px;display:flex;align-items:center;gap:14px;font-size:34px"><svg width="48" height="48" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><rect x="10" y="12" width="80" height="76" rx="8"/><path d="M24 32h52M24 46h52M24 60h52M24 74h30"/></svg>+ DE DÉTAILS</div>
+
+  </div>
+  <script>
+
+const tl = gsap.timeline({ paused: true });
+const pop = (s, t, d) => tl.fromTo(s, { opacity: 0, scale: 0.55, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: d || 0.38, ease: "back.out(2.2)" }, t);
+const slideL = (s, t) => tl.fromTo(s, { opacity: 0, x: -140 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, t);
+const slideR = (s, t) => tl.fromTo(s, { opacity: 0, x: 140 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, t);
+const rise = (s, t) => tl.fromTo(s, { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, t);
+const out = (s, t) => tl.to(s, { opacity: 0, scale: 0.85, duration: 0.25, ease: "power2.in" }, t);
+const typeAt = (sel, times) => { document.querySelectorAll(sel).forEach((el, i) => tl.set(el, { opacity: 1 }, times[i])); };
+const typeChars = (sel, t0, t1) => { const el = document.querySelector(sel); const full = el.dataset.full; const o = { n: 0 };
+  tl.fromTo(o, { n: 0 }, { n: full.length, duration: t1 - t0, ease: "none", onUpdate: () => { el.textContent = full.slice(0, Math.round(o.n)); } }, t0); };
+const wiggle = (s, t, n) => tl.fromTo(s, { rotation: -4 }, { rotation: 4, duration: 0.1, yoyo: true, repeat: n || 5, ease: "sine.inOut" }, t).to(s, { rotation: 0, duration: 0.1 }, ">");
+
+
+pop("#a-badge", 0.05); rise("#a-bar", 0.2); typeChars("#a-typed", 0.5, 2.48);
+rise("#a-card", 2.28); pop("#a-short", 2.48);
+out("#a-short", 3.68); tl.fromTo("#a-long", { opacity: 0, scaleY: 0.3, transformOrigin: "50% 0%" }, { opacity: 1, scaleY: 1, duration: 0.45, ease: "power3.out" }, 3.7800000000000002);
+slideL("#a-e1", 4.98); slideL("#a-e2", 5.48); slideR("#a-chip", 4.08);
+out("#a-card", 6.74); out("#a-chip", 6.74); out("#a-badge", 6.74); out("#a-bar", 6.74);
+
+    tl.set({}, {}, 7.04);
+    window.__timelines["n1"] = tl;
+  </script>
+</template>

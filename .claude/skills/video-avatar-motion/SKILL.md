@@ -46,7 +46,8 @@ Regarder la planche (Read) et noter : police, couleurs, composants, position de 
    Référence de voix : `assets/voix/kone_reference.wav` (16 s extraites de `assets/voix/kone_echantillon_complet.mp3`, 2 min 24 enregistrées par Koné).
    Réglages : `--exaggeration 0.5` (0.3 plus posé, 0.7 plus expressif), `--cfg 0.5` (plus bas = débit plus lent), `--pause 0.35`.
    Durée : ≈ 7 s de calcul par seconde de voix (2 min de voix ≈ 15 min) → lancer en arrière-plan et préparer les scènes pendant ce temps.
-3. Vérifier avec la transcription (étape 3) que chaque phrase est complète ; régénérer seulement une phrase ratée si besoin (texte d'une phrase → petit MP3 → remplacer dans le montage avec ffmpeg).
+   Recommandé : `--tempo 1.1` (le clone parle un peu lentement). Écrire les nombres en lettres (« numéro un », « vingt-cinq »).
+3. Le script refait tout seul les phrases de longueur anormale (répétitions) et les signale (« À vérifier : 15 »). Toujours **retranscrire le MP3** (étape 3) et comparer au texte : s'il reste un mot répété ou manquant dans la phrase n, relancer la même commande avec `--redo n` (seule cette phrase est recalculée, ~1 min).
 4. Si une meilleure qualité est demandée : cloner la même voix sur ElevenLabs (« Instant Voice Clone », abonnement payant requis) avec `kone_echantillon_complet.mp3`, puis utiliser son voice_id ci-dessous.
 
 **Repli : voix « Tony »** (si la voix clonée ne convient pas ou si l'utilisateur la demande).
@@ -86,7 +87,11 @@ Volume dans la vidéo : `data-volume="0.13"` sous la voix.
 
 ## Étape 6 — Écrire la vidéo
 
-Partir du modèle : `cp $SKILL/templates/generate_example.py generate.py`, puis l'adapter au nouveau texte. Il génère `index.html` + une scène par fichier dans `compositions/` :
+Deux modèles, à copier puis adapter au nouveau texte :
+- **`templates/generate_5_raccourcis.py`** (recommandé, vidéo « 5 raccourcis ChatGPT », 66 s, voix clonée) : liste numérotée de conseils. Il **cale tout sur les mots prononcés** avec `A("mot", après)` / `A("mot1|mot2")` (insensible aux accents et à la ponctuation), donc il résiste aux variations de la voix clonée. Scènes : accroche (question + 5 mini-cartes + clic), une scène par conseil (badge NUMÉRO + barre de commande ChatGPT tapée + maquette du résultat : paragraphe, pour/contre, liste, tableau, plan), astuce, appel à commenter. Lancement : `VOICE_LEN=<durée voice.mp3> python3 generate.py $SKILL/templates/generate_example.py video`. Texte de voix associé : `templates/voix_5_raccourcis.txt`.
+- **`templates/generate_example.py`** (vidéo « 20 ans d'expérience », 1 min 53) : explication en 3 étapes avec fenêtres de prompt tapées mot à mot ; repères par index de mot `T(i)`.
+
+Il génère `index.html` + une scène par fichier dans `compositions/` :
 
 - **Scènes** : une par grande partie du texte (accroche, plan, étape 1/2/3, attention, atout, appel à l'action). Pour chaque scène : `S["id"] = (début, durée)`, du HTML et des appels JS (`pop`, `slideL`, `slideR`, `rise`, `out`, `wiggle`, `typeAt` pour taper un prompt mot à mot au rythme de la voix, `typeChars`).
 - **Composants prêts** : `lbl()` (étiquette orange / blanche / noire), `header()` (badge « NUMÉRO n » + 2 étiquettes), `chat_window()` (fenêtre ChatGPT avec bulle tapée mot à mot), cartes `.box`, icônes SVG maison (`ICON` : briefcase, coin, sparkle, user, users, building, folder, pen, cap, route, bulb, warning, check, hourglass, magnifier, trophy, chart, target, chat, send, plus).

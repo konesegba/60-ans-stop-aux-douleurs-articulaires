@@ -1,0 +1,8 @@
+Même question, cinq réponses totalement différentes. Un seul clic suffit. Reste jusqu'à la fin, le dernier est le plus puissant.
+Numéro un : développe et ajoute des détails. Ta réponse d'une phrase devient un vrai paragraphe, avec des exemples.
+Numéro deux : compare le pour et le contre. Tu vois les deux côtés, et tu décides sans te tromper.
+Numéro trois : fais une liste à puces. Tout devient lisible en un coup d'œil.
+Numéro quatre : convertis en tableau. Tu compares tout, ligne par ligne.
+Et le dernier, numéro cinq : crée un plan ou une structure. Ta réponse devient une marche à suivre, étape par étape.
+Petite astuce : tu peux les enchaîner. D'abord, développe. Ensuite, mets en tableau.
+Tu veux la liste des vingt-cinq raccourcis ? Écris Académie en commentaire, et je te l'envoie.

@@ -1,0 +1,78 @@
+<template>
+  <style>
+#root{position:absolute;inset:0;font-family:'Montserrat',sans-serif;color:#111;}
+.abs{position:absolute}
+.row{position:absolute;left:0;width:1080px;display:flex;justify-content:center}
+.lbl{display:inline-block;background:#E8532F;color:#fff;font-weight:900;text-transform:uppercase;font-size:50px;line-height:1.12;padding:14px 28px;border:5px solid #111;box-shadow:9px 9px 0 #111;white-space:nowrap;letter-spacing:.01em}
+.lbl.w{background:#fff;color:#111}
+.lbl.k{background:#111;color:#fff;box-shadow:9px 9px 0 #E8532F}
+.lbl.s{font-size:40px;padding:10px 22px}
+.lbl.xl{font-size:76px;padding:16px 34px}
+.box{background:#fff;border:5px solid #111;box-shadow:14px 14px 0 #111;border-radius:12px}
+.o{color:#E8532F}
+.ic{display:flex;align-items:center;justify-content:center}
+svg{flex:none}
+.badge{width:170px;height:190px;background:#E8532F;border:5px solid #111;box-shadow:10px 10px 0 #111;color:#fff;text-align:center;font-weight:900}
+.badge small{display:block;font-size:28px;margin-top:16px;letter-spacing:.06em}
+.badge b{display:block;font-size:120px;line-height:1}
+.win-h{height:78px;border-bottom:5px solid #111;display:flex;align-items:center;gap:12px;padding:0 26px;font-weight:900;font-size:32px}
+.win-h i{width:20px;height:20px;border-radius:50%;border:4px solid #111;display:inline-block}
+.win-h i:first-child{background:#E8532F}
+.win-h .st{margin-left:auto;background:#111;color:#fff;font-size:28px;padding:6px 14px;border-radius:6px;letter-spacing:.05em}
+.win-b{padding:30px 30px 10px}
+.bubble{margin-left:50px;background:#F1F1F1;border-radius:30px;padding:26px 32px;font-weight:600;font-size:34px;line-height:1.4}
+.bubble .tw{opacity:0}
+.bubble .tw.o{font-weight:800}
+.win-f{margin:20px 30px 30px;border:4px solid #111;border-radius:50px;height:96px;display:flex;align-items:center;padding:0 14px 0 22px;gap:16px;font-size:30px;font-weight:600;color:#888}
+.win-f .sp{margin-left:auto}
+.tile{display:flex;align-items:center;gap:22px;padding:22px 26px;font-weight:900;font-size:36px;text-transform:uppercase;line-height:1.15}
+
+.bar{height:110px;display:flex;align-items:center;gap:16px;padding:0 14px 0 18px;box-shadow:10px 10px 0 #111}
+.bar .typed{color:#E8532F;font-weight:800;font-size:31px;flex:1;white-space:nowrap;overflow:hidden}
+.card-t{font-weight:900;font-size:34px;text-transform:uppercase}
+.gpt{display:flex;align-items:center;gap:12px;font-weight:900;font-size:28px;margin-bottom:16px}
+.gpt i{width:40px;height:40px;border-radius:50%;background:#111;display:inline-block}
+</style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920" data-layout-allow-overlap>
+
+<div class="abs" style="left:70px;top:330px;width:940px"><div style="font-weight:900;font-size:28px;margin:0 0 6px 6px">ChatGPT</div>
+<div id="h-bar" class="box bar"><svg width="48" height="48" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="8" width="84" height="84" rx="12"/><path d="M50 28v44M28 50h44"/></svg><span id="h-typed" class="typed" data-full="Comment trouver mes premiers clients ?"></span><div id="h-send"><svg width="70" height="70" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="50" cy="50" r="46" fill="#111" stroke="none"/><path d="M50 72V30M32 46l18-18 18 18" stroke="#fff" stroke-width="9"/></svg></div></div></div>
+<div id="h-cur" class="abs" style="left:960px;top:470px"><svg width="80" height="80" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><path d="M20 8l60 44-26 6 14 30-12 6-14-30-22 18z" fill="#fff"/></svg></div>
+<div id="h-m0" class="box abs" style="left:60px;top:540px;width:176px;height:230px;text-align:center;padding-top:16px"><div style="font-weight:900;font-size:30px;color:#E8532F">1</div><svg width="96" height="96" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><rect x="10" y="12" width="80" height="76" rx="8"/><path d="M24 32h52M24 46h52M24 60h52M24 74h30"/></svg><div style="font-weight:900;font-size:22px;margin-top:8px" data-layout-ignore>DÉVELOPPE</div></div><div id="h-m1" class="box abs" style="left:256px;top:540px;width:176px;height:230px;text-align:center;padding-top:16px"><div style="font-weight:900;font-size:30px;color:#E8532F">2</div><svg width="96" height="96" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="12" width="84" height="76" rx="8"/><path d="M50 12v76"/><path d="M20 38l7 7 12-14" stroke="#E8532F" stroke-width="8"/><path d="M62 30l16 16M78 30L62 46"/></svg><div style="font-weight:900;font-size:22px;margin-top:8px" data-layout-ignore>POUR / CONTRE</div></div><div id="h-m2" class="box abs" style="left:452px;top:540px;width:176px;height:230px;text-align:center;padding-top:16px"><div style="font-weight:900;font-size:30px;color:#E8532F">3</div><svg width="96" height="96" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="20" cy="26" r="7" fill="#E8532F"/><circle cx="20" cy="50" r="7" fill="#E8532F"/><circle cx="20" cy="74" r="7" fill="#E8532F"/><path d="M38 26h50M38 50h50M38 74h40"/></svg><div style="font-weight:900;font-size:22px;margin-top:8px" data-layout-ignore>LISTE</div></div><div id="h-m3" class="box abs" style="left:648px;top:540px;width:176px;height:230px;text-align:center;padding-top:16px"><div style="font-weight:900;font-size:30px;color:#E8532F">4</div><svg width="96" height="96" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><rect x="8" y="14" width="84" height="72" rx="6"/><path d="M8 36h84M8 60h84M38 14v72M66 14v72"/><rect x="8" y="14" width="84" height="22" fill="#E8532F"/></svg><div style="font-weight:900;font-size:22px;margin-top:8px" data-layout-ignore>TABLEAU</div></div><div id="h-m4" class="box abs" style="left:844px;top:540px;width:176px;height:230px;text-align:center;padding-top:16px"><div style="font-weight:900;font-size:30px;color:#E8532F">5</div><svg width="96" height="96" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><circle cx="22" cy="20" r="10" fill="#E8532F"/><circle cx="22" cy="50" r="10" fill="#E8532F"/><circle cx="22" cy="80" r="10" fill="#E8532F"/><path d="M22 30v10M22 60v10M42 20h46M42 50h40M42 80h46"/></svg><div style="font-weight:900;font-size:22px;margin-top:8px" data-layout-ignore>PLAN</div></div>
+<div class="row" style="top:830px"><div id="h-clic" class="lbl ">UN SEUL CLIC SUFFIT</div></div>
+<div class="row" style="top:830px"><div id="h-fin" class="lbl w">RESTE JUSQU'À LA FIN</div></div>
+<div id="h-star" class="abs" style="left:880px;top:470px"><svg width="110" height="110" viewBox="0 0 100 100" fill="none" stroke="#111" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"><path d="M50 6l13 28 31 4-23 21 6 31-27-15-27 15 6-31L6 38l31-4z" fill="#E8532F"/></svg></div>
+<div class="row" style="top:930px"><div id="h-top" class="lbl k">LE PLUS PUISSANT</div></div>
+
+  </div>
+  <script>
+
+const tl = gsap.timeline({ paused: true });
+const pop = (s, t, d) => tl.fromTo(s, { opacity: 0, scale: 0.55, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: d || 0.38, ease: "back.out(2.2)" }, t);
+const slideL = (s, t) => tl.fromTo(s, { opacity: 0, x: -140 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, t);
+const slideR = (s, t) => tl.fromTo(s, { opacity: 0, x: 140 }, { opacity: 1, x: 0, duration: 0.4, ease: "power3.out" }, t);
+const rise = (s, t) => tl.fromTo(s, { opacity: 0, y: 120 }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, t);
+const out = (s, t) => tl.to(s, { opacity: 0, scale: 0.85, duration: 0.25, ease: "power2.in" }, t);
+const typeAt = (sel, times) => { document.querySelectorAll(sel).forEach((el, i) => tl.set(el, { opacity: 1 }, times[i])); };
+const typeChars = (sel, t0, t1) => { const el = document.querySelector(sel); const full = el.dataset.full; const o = { n: 0 };
+  tl.fromTo(o, { n: 0 }, { n: full.length, duration: t1 - t0, ease: "none", onUpdate: () => { el.textContent = full.slice(0, Math.round(o.n)); } }, t0); };
+const wiggle = (s, t, n) => tl.fromTo(s, { rotation: -4 }, { rotation: 4, duration: 0.1, yoyo: true, repeat: n || 5, ease: "sine.inOut" }, t).to(s, { rotation: 0, duration: 0.1 }, ">");
+
+
+tl.fromTo("#h-bar", { scale: 0.95 }, { scale: 1, duration: 0.4, ease: "back.out(2)" }, 0);
+typeChars("#h-typed", 0.1, 1.1);
+pop("#h-m0", 0.98);pop("#h-m1", 1.33);pop("#h-m2", 1.68);pop("#h-m3", 2.03);pop("#h-m4", 2.38);
+pop("#h-clic", 3.67);
+tl.fromTo("#h-cur", { x: 0, y: 300, opacity: 0 }, { x: -10, y: 0, opacity: 1, duration: 0.45, ease: "power2.out" }, 4.11);
+tl.fromTo("#h-cur", { scale: 1 }, { scale: 0.8, duration: 0.1, yoyo: true, repeat: 1 }, 4.61);
+tl.fromTo("#h-send", { scale: 1 }, { scale: 1.25, duration: 0.12, yoyo: true, repeat: 1 }, 4.61);
+out("#h-clic", 6.19); out("#h-cur", 6.19); pop("#h-fin", 6.49);
+tl.to("#h-m0", { opacity: 0.35, duration: 0.3 }, 8.88);tl.to("#h-m1", { opacity: 0.35, duration: 0.3 }, 8.88);tl.to("#h-m2", { opacity: 0.35, duration: 0.3 }, 8.88);tl.to("#h-m3", { opacity: 0.35, duration: 0.3 }, 8.88);
+tl.to("#h-m4", { scale: 1.18, y: -20, duration: 0.4, ease: "back.out(3)" }, 8.88);
+pop("#h-star", 9.08); tl.fromTo("#h-star", { rotation: 0 }, { rotation: 90, duration: 1.2 }, 9.38);
+out("#h-fin", 8.83); pop("#h-top", 9.08);
+
+    tl.set({}, {}, 10.44);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>
